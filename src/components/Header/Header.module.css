@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  p {
+    margin: 10px 0 0;
+    color: #666;
+  }
