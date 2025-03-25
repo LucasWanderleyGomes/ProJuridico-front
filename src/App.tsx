@@ -1,11 +1,13 @@
 import React from 'react';
-import LoginPage from './pages/LoginPage/LoginPage';
+
 import './App.css';
+import CreateUser from './components/CreateUser';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <LoginPage />
+    <div>
+      <h1>Cadastro de Usuário</h1>
+      <CreateUser />
     </div>
   );
 };
