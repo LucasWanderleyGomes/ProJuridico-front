@@ -1,10 +1,11 @@
 import React from 'react'
+import FormCadastro from '../components/FormCadastro'
 
 const Cadastro = () => {
 
   return (
 
-    <div>Cadastro</div>
+    <FormCadastro route="/api/v2/auth/users/" method="register" />
     
   )
 }

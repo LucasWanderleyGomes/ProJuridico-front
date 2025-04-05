@@ -1,10 +1,12 @@
 import React from 'react'
+import Form from '../components/Form'
 
 const Login = () => {
 
   return (
 
-    <div>Login</div>
+    
+    <Form route="/api/v2/auth/jwt/create/" method="login" />
     
   )
 }
