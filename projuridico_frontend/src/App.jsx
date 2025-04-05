@@ -45,6 +45,13 @@ function App() {
           }
         />
 
+        <Route
+          path="/logout"
+          element={
+            <Logout />
+          }
+        />
+
         <Route 
           path="/cadastro"
           element={
