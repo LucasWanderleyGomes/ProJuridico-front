@@ -2,9 +2,9 @@ import "../styles/components/Header.css"
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <h1 className={styles.logo}>Prolurídico</h1>
-      <nav className={styles.nav}>
+    <header className="header">
+      <h1 className="logo">Prolurídico</h1>
+      <nav className="nav">
         <a href="#">Adevocida</a>
         <a href="#">Consultoria</a>
         <a href="#">Contato</a>
