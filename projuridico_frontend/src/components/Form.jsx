@@ -38,8 +38,8 @@ const Form = ({route, method}) =>{
     }
     return(
         <form onSubmit={handleSubmit} className="form-container">
-            <h1>Bem vindo de volta</h1>
-            <p>Entre com suas credenciais</p>
+            <h1 id="titulo-formulario">Bem vindo de volta!</h1>
+            <p id="texto-formulario">Entre com suas credenciais</p>
             <input 
                 type="email" 
                 className="input email" 

@@ -1,3 +1,4 @@
+
 main{
     width: 100%;
     height: 100vh;
@@ -12,20 +13,144 @@ main{
 }
 
 .content-section{
+    box-sizing: border-box;
     width: 100%;
     display:flex;
     justify-content: space-evenly;
+    padding: 60px;
 }
 p{
     font-size: 20px;
 }
 
 #icone-pj{
-    font-size: 32px;
+    width: 60px;
+    
 }
 
 #title-page{
     display: flex;
     align-items: center;
     gap: 14px;
+    color: #fdbc58;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: black;
+}
+
+#h1-titulo{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+    font-style: black;
+    margin: 0;
+    font-size: 72px;
+}
+
+.container-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 56%;
+}
+#container-ps{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#img-bolinhas{
+    width: 80px;
+}
+
+#txt-2{
+    font-family: "Amiko", sans-serif;
+    /* font-weight: 100; */
+    font-style: normal;
+    font-size: 16px;
+    width: 45%;
+    color: #dfdfdf;
+}
+
+#txt-1{
+    font-family: "Cardo", serif;
+    font-weight: 500;
+    font-size: 31px;
+    width: 68%;
+    letter-spacing: 0.7px;
+}
+
+#container-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* box-sizing: border-box; */
+    padding: 38px;
+    border-radius: 8px;
+    min-width: 487px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    display: flex;
+    padding: 10px 19px;
+    border: thin solid lightgray;
+    border-radius: 6px;
+}
+
+.botao-logar{
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #123A54;
+    color: white;
+}
+
+.box-esqueci{
+    display: flex;
+}
+.criar-conta{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.box-esqueci{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 6px;
+}
+
+.box-esqueci>a{
+    color: #123A54;
+    font-weight: 500;
+}
+
+#link-esqueci{
+    text-decoration: solid;
+    text-align: end;
+    margin-top: 20px;
+    color: #123A54;
+    font-weight: 500;
+}
+
+#titulo-formulario{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: black;
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+#texto-formulario{
+    font-size: 18px;
+    color: rgb(110, 112, 110);
 }
