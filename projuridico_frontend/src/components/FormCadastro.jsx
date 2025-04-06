@@ -2,7 +2,7 @@ import {useState} from "react"
 import api from "../api"
 import { useNavigate } from "react-router-dom"
 import {ACCESS_TOKEN, REFRESH_TOKEN} from "../constants"
-import "../styles/FormCadastro.css"
+import "../styles/components/FormCadastro.css"
 
 const FormCadastro = ({route, method}) =>{
     const [username, setUserName] = useState("")

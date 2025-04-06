@@ -2,7 +2,7 @@ import {useState} from "react"
 import api from "../api"
 import { useNavigate } from "react-router-dom"
 import {ACCESS_TOKEN, REFRESH_TOKEN} from "../constants"
-import "../styles/Form.css"
+import "../styles/components/Form.css"
 
 const Form = ({route, method}) =>{
     const [email, setEmail] = useState("")
@@ -11,7 +11,7 @@ const Form = ({route, method}) =>{
 
     const navigate = useNavigate()
 
-    const titulo = method === "login" ? "Entrar" : "Cadastrar"
+   
 
     const handleSubmit = async(e) =>{
         setLoading(true)
@@ -38,7 +38,8 @@ const Form = ({route, method}) =>{
     }
     return(
         <form onSubmit={handleSubmit} className="form-container">
-            <h1>{titulo}</h1>
+            <h1>Bem vindo de volta</h1>
+            <p>Entre com suas credenciais</p>
             <input 
                 type="email" 
                 className="input email" 
@@ -54,7 +55,7 @@ const Form = ({route, method}) =>{
                 placeholder="Senha"
             />
             <button type="submit" className="botao-logar">
-                {titulo}
+                Entrar
             </button>
         </form>
     )
