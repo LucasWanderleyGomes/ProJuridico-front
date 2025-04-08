@@ -1,0 +1,47 @@
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+  
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.specialty {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.features {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.features li:before {
+  content: "•";
+  color: #e74c3c;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
