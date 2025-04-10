@@ -1,5 +1,5 @@
 import "../styles/components/Hero.css"
-import "../assets/hero.png"
+import hero from "../assets/hero.png"
 
 
 const Hero = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
                     <h4>Advocacia Especializada</h4>
                 </div>
 
-                <img src={"hero.png"}></img>
+                <img src={hero}></img>
             </div>
         </div>
         
