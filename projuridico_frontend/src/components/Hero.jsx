@@ -1,5 +1,6 @@
 import "../styles/components/Hero.css"
-import "../styles/assents/hero.png"
+import "../assets/hero.png"
+
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
                     <h4>Advocacia Especializada</h4>
                 </div>
 
-                <img src="hero.png" alt=""></img>
+                <img src={"hero.png"}></img>
             </div>
         </div>
         
