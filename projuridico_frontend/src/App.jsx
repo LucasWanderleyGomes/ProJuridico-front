@@ -9,6 +9,9 @@ import Cadastro from "./pages/Cadastro"
 import Erro404 from "./pages/Erro404"
 import Home from "./pages/Home"
 import Comunidade from "./pages/Comunidade"
+import Consultoria from "./pages/Consultoria"
+import Portfolio from "./pages/Portfolio"
+import Contato from "./pages/Contato"
 
 // importando os componentes das nossas rotas protegidas =-=-=-=-
 
@@ -33,6 +36,13 @@ function App() {
 
         <Route 
           path="/" 
+          element={
+              <Home />
+          } 
+        />
+
+         <Route 
+          path="/home" 
           element={
               <Home />
           } 
@@ -67,11 +77,32 @@ function App() {
         />
 
         <Route 
+          path="/portfolio"
+          element = {
+            <Portfolio />
+          }
+        />
+
+         <Route 
+          path="/consultoria"
+          element = {
+            <Consultoria />
+          }
+        />
+
+        <Route 
           path="/comunidade" 
           element={
             <ProtectedRoute>
               <Comunidade />
             </ProtectedRoute>
+          } 
+        />
+
+        <Route 
+          path="/contato" 
+          element={
+            <Contato/>
           } 
         />
 
