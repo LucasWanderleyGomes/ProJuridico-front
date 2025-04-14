@@ -6,9 +6,11 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import "../styles/Pages/Home.css";
 
+
 const Home = () => {
   return (
     <div className="home-container">
+      <Header/>
       <Hero />
       <main>
         

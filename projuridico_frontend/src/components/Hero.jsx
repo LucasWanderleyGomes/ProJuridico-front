@@ -1,25 +1,18 @@
 import "../styles/components/Hero.css"
 import hero from "../assets/hero.png"
+import Header from "./Header";
 
 
 const Hero = () => {
   return (
     <section class="main">
+        
         <div class="hero">
-            <header>
-                <h2>Projuridico</h2>
-
-                <div class="items">
-                    <a href="">Advocacia</a>
-                    <a href="">Consultoria</a>
-                    <a href="">Contato</a>
-                    <a href="">Comunidade</a>
-                </div>
-            </header>
+            
 
             <div class="action">
                 <div class="name">
-                    <p> Danielle Lucena</p>
+                    <p>Danielle Lucena</p>
                     <h4>Advocacia Especializada</h4>
                 </div>
 
