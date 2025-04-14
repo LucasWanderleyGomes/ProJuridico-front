@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #123a54;
+    justify-content: space-between;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 0px 1px 4px #57575726;
+    /* color: white; */
+}
+.items>a{
+    color: white;
+}
+
+#bot-sair-log{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2.4px solid #2c3e50;
+  }
