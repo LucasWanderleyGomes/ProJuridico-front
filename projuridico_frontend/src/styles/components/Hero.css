@@ -1,47 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: flex-start;
+    height: 90vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 .hero {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: #fff;
-}
-  
-.content {
-  max-width: 800px;
-  margin: 0 auto;
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    height: 100%;
+    width: 70%;
 }
 
-.name {
-  font-size: 1.5rem;
-  color: #7f8c8d;
-  margin-bottom: 0.5rem;
+.hero header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 32px;
 }
 
-.specialty {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 2rem;
+.hero header h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #FDBC58;
 }
 
-.features {
-  text-align: left;
-  list-style-type: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
+.hero header .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 32px;
 }
 
-.features li {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
-  position: relative;
-  line-height: 1.6;
+.hero header .items a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #000000;
+
+}
+.hero .action {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
-.features li:before {
-  content: "•";
-  color: #e74c3c;
-  font-size: 1.5rem;
-  position: absolute;
-  left: 0;
-  top: -0.2rem;
+.call {
+    display: block;
+    position: relative;
+    background-color: #123A54;
+    height: 100%;
+    width: 30%;
+}
+
+.call button.login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+    border-radius: 8px;
+    padding: 12px 22px;
+    margin: 16px;
+    font-family: "Cabin", sans-serif;
+    
+}
+
+.call .more {
+    display: flex;
+    padding: 0 48px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 100%;
+}
+
+.call .more h3{
+    font-family: "Cardo", serif;
+    font-family: Cardo, sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #FDBC58;
+    margin-top: 20px;
+}
+.call .more p {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.call .more button {
+    background-color: #FFFFFF;
+    color: #123A54;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
 }
