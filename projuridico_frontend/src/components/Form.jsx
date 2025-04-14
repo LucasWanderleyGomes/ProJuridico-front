@@ -1,13 +1,22 @@
 import {useState} from "react"
+
+// utilidades 
 import api from "../api"
 import { useNavigate } from "react-router-dom"
 import {ACCESS_TOKEN, REFRESH_TOKEN} from "../constants"
+
+// estilos
 import "../styles/components/Form.css"
+
+// componentes
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 const Form = ({route, method}) =>{
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState(false)
+    const [showPassword, setShowPassword] = useState(false);
 
     const navigate = useNavigate()
 
@@ -47,13 +56,21 @@ const Form = ({route, method}) =>{
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
             />
-            <input 
-                type="password" 
-                className="input senha" 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Senha"
-            />
+            <div className="container-senha">
+                <input 
+                    type={showPassword ? "text" : "password"}
+                    className="input senha"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Senha"
+                />
+                <span 
+                    className="olhinho"
+                    onClick={() => setShowPassword(!showPassword)}
+                >
+                    {showPassword ? <FaEye/> : <FaEyeSlash/> }
+                </span>
+            </div>
             <button type="submit" className="botao-logar">
                 Entrar
             </button>
