@@ -1,8 +1,9 @@
-.box {
+.Box {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin: 2rem 0;
+
 }
   
 .box1, .box2, .box3 {
@@ -11,11 +12,16 @@
     width: 250px;
     border-radius: 8px;
     text-align: center;
-    position: relative;
+    position: flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 320px;
+    margin-left: 100px;
+ 
+    
+    
+    
 }
   
   
