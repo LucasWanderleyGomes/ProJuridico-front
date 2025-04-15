@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Community from "../components/Community";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import "../styles/Pages/Home.css";
+import Box from "../components/Box";
 
 
 const Home = () => {
@@ -12,13 +12,13 @@ const Home = () => {
     <div className="home-container">
       <Header/>
       <Hero />
+      <Box />
+     
       <main>
         
         <Community />
     
       </main>
-      <Contact />
-      <Footer />
     </div>
   );
 };
