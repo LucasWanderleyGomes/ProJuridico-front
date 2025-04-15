@@ -5,13 +5,13 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-    <section class="main">
+    <section className="main">
         
-        <div class="hero">
+        <div className="hero">
             
 
-            <div class="action">
-                <div class="name">
+            <div className="action">
+                <div className="name">
                     <p>Danielle Lucena</p>
                     <h4>Advocacia Especializada</h4>
                 </div>
@@ -20,10 +20,10 @@ const Hero = () => {
             </div>
         </div>
         
-        <div class="call">
-            <button class="login">Login</button>
+        <div className="call">
+            <button className="login">Login</button>
 
-            <div class ="more">
+            <div className="more">
              <h3>Nossa missão é contribuir para o fortalecimento da autonomia das mulheres </h3>
              <p>A partir de uma assessoria jurídica humanizada.</p>
              <button>Saiba mais</button>
