@@ -1,11 +1,22 @@
 
 .community {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 5rem 2rem;
   background-color: #123A54; 
 }
 
+.community::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: #123A54;
+  z-index: -1;
+}
 
 .community__title {
   text-align: center;

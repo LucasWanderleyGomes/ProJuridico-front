@@ -1,0 +1,80 @@
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+  
+.box1, .box2, .box3 {
+    background-color: #f7f7f7;
+    padding: 2rem 1.5rem;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+}
+  
+  
+.box1::before,
+.box2::before,
+.box3::before {
+
+    content: '1';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    color: orange;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #fff;
+ }
+  
+.box2::before {
+    content: '2';
+}
+  
+.box3::before {
+    content: '3';
+}
+  
+  
+.box p {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #333;
+}
+  
+ 
+.box1::after {
+    content: '❓';
+    font-size: 20px;
+    color: orange;
+    margin-top: auto;
+}
+  
+.box2::after {
+    content: '⌘'; 
+    font-size: 20px;
+    color: orange;
+    margin-top: auto;
+}
+
+.box3::after {
+    content: '🧠'; 
+    font-size: 20px;
+    color: orange;
+    margin-top: auto;
+}
+  
