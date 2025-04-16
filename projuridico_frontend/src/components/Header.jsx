@@ -30,7 +30,7 @@ const Header = () => {
 
           {token? (
             
-            <Link to="/home" className="links-nav" id="bot-sair" onClick={handleDeslogar}>Sair</Link>
+            <Link to="/login" className="links-nav" id="bot-sair" onClick={handleDeslogar}>Sair</Link>
             
           ):(
             <Link to="/logout" className="links-nav" id="bot-login">Login</Link>
