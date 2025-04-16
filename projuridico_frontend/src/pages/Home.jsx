@@ -16,10 +16,11 @@ const Home = () => {
       <Box />
      
       <main>
-        
         <Community />
-    
+
       </main>
+      <Contact />
+
     </div>
   );
 };
