@@ -91,7 +91,16 @@ const Portfolio = () => {
                 viewport={{ once: true }}
                 id='motion-div2'
               >
-                <p>E, em reforço, faz-se necessário impulsionar outras formas de emancipação da mulher. Daí nasce a necessidade de ampliar a atuação para a proteção da sua produção intelectual e de sua base empresarial, sobretudo na vertente educacional; do seu acesso à saúde, aos benefícios previdenciários e à possibilidade de transcendência dos frutos do seu trabalho e interesses pessoais, a partir do planejamento sucessório.</p>
+                <div className='content-motion'>
+                  <div className="left-container-info">
+                  <p>E, em reforço, faz-se necessário impulsionar outras formas de emancipação da mulher. Daí nasce a necessidade de ampliar a atuação para a proteção da sua produção intelectual e de sua base empresarial, sobretudo na vertente educacional; do seu acesso à saúde, aos benefícios previdenciários e à possibilidade de transcendência dos frutos do seu trabalho e interesses pessoais, a partir do planejamento sucessório.</p>
+                  </div>
+                  <div className="right-container-info">
+
+                  </div>
+                
+                </div>
+                
             </motion.div>
             
           </div>
@@ -103,7 +112,25 @@ const Portfolio = () => {
                   viewport={{ once: true }}
                   id='motion-div3'
                 >
-                <p>A atuação é coordenada e executada em maior parte pela Dra. @daniellelucenaadv , mas também conta com a colaboração e alta competência técnica de outras advogadas, formando uma grande rede de mulheres que defendem mulheres e vivem juntas um potente processo de empoderamento, em vias individual e coletiva, como deve ser.</p>
+                  <div className='content-motion'>
+                    <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    id='motion-div3'
+                    >  
+                      <div className="left-container-info">
+                        <p>A atuação é coordenada e executada em maior parte pela Dra. @daniellelucenaadv , mas também conta com a colaboração e alta competência técnica de outras advogadas, formando uma grande rede de mulheres que defendem mulheres e vivem juntas um potente processo de empoderamento, em vias individual e coletiva, como deve ser.</p>
+                      </div>
+                    </motion.div>
+                    
+                  <div className="right-container-info">
+
+                  </div>
+                
+                  </div>
+                
             </motion.div>
             
           </div>

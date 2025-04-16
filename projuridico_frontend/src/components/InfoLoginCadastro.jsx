@@ -4,6 +4,7 @@ import React from 'react'
 import logo from '../assets/icone-projuridico.png'
 import bolinhas from '../assets/bolinhas.png'
 import { ImHammer2 } from "react-icons/im";
+import {Link} from "react-router-dom"
 
 const InfoLoginCadastro = () => {
   return (
@@ -12,7 +13,8 @@ const InfoLoginCadastro = () => {
               <div id='title-page'>
                 {/* <ImHammer2 id='icone-pj'/> */}
                 <img src={logo} alt=""  id='icone-pj'/>
-                <h1 id='h1-titulo'>ProJurídico</h1>
+                <Link to="/" id='h1-titulo'>ProJurídico</Link>
+                
               </div>
 
               <div id='container-ps'>

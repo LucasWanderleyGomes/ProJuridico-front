@@ -62,11 +62,24 @@
   font-size: 15px;
 }
 
-#bot-sair-log{
+#bot-sair{
   text-decoration: none;
-  color: #ffffff;
+  color: #123A54;
   font-size: 15px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 2.4px solid #ffffff;
+  font-weight: 600;
+  padding: 8px 28px;
+  border-radius: 21px;
+  background-color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#bot-login{
+  text-decoration: none;
+  color: #123A54;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 28px;
+  border-radius: 21px;
+  background-color: white;
+  font-family: "Titillium Web", sans-serif;
 }
