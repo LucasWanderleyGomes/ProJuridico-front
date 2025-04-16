@@ -23,7 +23,7 @@ const PageDecoration = ({sectionName, descricaoSection, bg}) => {
             </div>
             
         </div>
-        <div id="linedivider"></div>
+        
     </>
   )
 }

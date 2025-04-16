@@ -5,6 +5,7 @@ import api from "../api"
 import { useState, useEffect } from 'react'
 import PageDecoration from '../components/PageDecoration'
 import bg from "../assets/bgSection.png"
+import {motion} from "framer-motion"
 
 const Portfolio = () => {
 
@@ -57,9 +58,78 @@ const Portfolio = () => {
     <>
       <Header/>
       <PageDecoration sectionName={"Portfolio"} descricaoSection={"Conheça todas os trabalhos (e projetos) mais importantes que consolidaram minha carreira, até o momento atual."} bg={bg}/>
-      <div>
-        {portfolio.map((processo) => <Processo processo={processo} onDelete={handleDeleteProcesso} key={processo.id}/> )}
+     
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id='carrossel-bg'>
+          <div class="carousel-item active" data-bs-interval="40000" id='item-carrossel1'>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              id='motion-div1'
+            >
+              <div className='content-motion'>
+                <div className="left-container-info">
+                  <p>Nosso ponto de partida e principal base de atuação é a defesa das mulheres no âmbito das estruturas familiares, que são os espaços onde as diferenças – essências distintas - podem, primeiramente, se transformar em desigualdades – privilégios de uns em detrimento de outros - e se transmutar em violências.</p>
+                </div>
+                <div className="right-container-info">
+
+                </div>
+                
+              </div>
+             
+
+            </motion.div>
+
+          </div>
+          <div class="carousel-item" data-bs-interval="40000" id='item-carrossel2'>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+                id='motion-div2'
+              >
+                <p>E, em reforço, faz-se necessário impulsionar outras formas de emancipação da mulher. Daí nasce a necessidade de ampliar a atuação para a proteção da sua produção intelectual e de sua base empresarial, sobretudo na vertente educacional; do seu acesso à saúde, aos benefícios previdenciários e à possibilidade de transcendência dos frutos do seu trabalho e interesses pessoais, a partir do planejamento sucessório.</p>
+            </motion.div>
+            
+          </div>
+          <div class="carousel-item" data-bs-interval="40000" id='item-carrossel3'>
+            <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  id='motion-div3'
+                >
+                <p>A atuação é coordenada e executada em maior parte pela Dra. @daniellelucenaadv , mas também conta com a colaboração e alta competência técnica de outras advogadas, formando uma grande rede de mulheres que defendem mulheres e vivem juntas um potente processo de empoderamento, em vias individual e coletiva, como deve ser.</p>
+            </motion.div>
+            
+          </div>
+        </div>
+        <button id='previous-but' class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button id='next-but' class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+      
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="p-8 bg-white rounded-2xl shadow-xl"
+      >
+        <div>
+          {portfolio.map((processo) => <Processo processo={processo} onDelete={handleDeleteProcesso} key={processo.id}/> )}
+        </div>
+      </motion.div>
+      
       
       <h3>Adicionar um processo</h3>
       <form onSubmit={handleCriarProcesso} className='form-processo'>
