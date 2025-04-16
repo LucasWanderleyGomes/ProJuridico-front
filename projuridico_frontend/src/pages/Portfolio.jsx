@@ -3,6 +3,8 @@ import Header from "../components/Header"
 import Processo from "../components/Processo"
 import api from "../api"
 import { useState, useEffect } from 'react'
+import PageDecoration from '../components/PageDecoration'
+import bg from "../assets/bgSection.png"
 
 const Portfolio = () => {
 
@@ -54,7 +56,7 @@ const Portfolio = () => {
   return (
     <>
       <Header/>
-      <h1>Portfolio</h1>
+      <PageDecoration sectionName={"Portfolio"} descricaoSection={"Conheça todas os trabalhos (e projetos) mais importantes que consolidaram minha carreira, até o momento atual."} bg={bg}/>
       <div>
         {portfolio.map((processo) => <Processo processo={processo} onDelete={handleDeleteProcesso} key={processo.id}/> )}
       </div>

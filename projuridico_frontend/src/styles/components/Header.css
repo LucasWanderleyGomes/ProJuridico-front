@@ -21,15 +21,15 @@
   
 .logo {
   display: flex
-;
-    align-items: center;
-    gap: 14px;
-    color: #fdbc58;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 900;
-    font-style: black;
-    font-size: 40px;
-    text-decoration: none;
+  ;
+      align-items: center;
+      gap: 14px;
+      color: #fdbc58;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 900;
+      font-style: black;
+      font-size: 33px;
+      text-decoration: none;
   }
   
   .nav {
@@ -59,13 +59,13 @@
 .items>a{
   text-decoration: none;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 #bot-sair-log{
   text-decoration: none;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
   padding: 8px 12px;
   border-radius: 8px;
   border: 2.4px solid #ffffff;

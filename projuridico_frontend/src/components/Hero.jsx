@@ -1,13 +1,11 @@
 import "../styles/components/Hero.css"
 import hero from "../assets/hero.png"
-import Header from "./Header";
 
 
 const Hero = () => {
   return (
     <section className="main">
-        
-        
+         
         <div className="hero">
 
             <div className="action">
@@ -18,22 +16,21 @@ const Hero = () => {
 
                 <img src={hero}></img>
             </div>
+
         </div>
         
         <div className="call">
             <button className="login">Login</button>
 
             <div className ="more">
-             <h3>Nossa missão é contribuir para o fortalecimento da autonomia das mulheres </h3>
-             <p>A partir de uma assessoria jurídica humanizada.</p>
-             <button>Saiba mais</button>
+                <h3>Nossa missão é contribuir para o fortalecimento da autonomia das mulheres </h3>
+                <p>A partir de uma assessoria jurídica humanizada.</p>
+                <button>Saiba mais</button>
             </div>
-          
-
-
-
         </div>
+
     </section>
+
   );
 };
 

@@ -1,6 +1,7 @@
 import "../styles/components/Header.css"
 import {Link} from "react-router-dom"
 import bg from "../assets/bg-navbar.png"
+
 const Header = () => {
   return (
     <header className="header" style={{ backgroundImage: `url(${bg})` }}>
