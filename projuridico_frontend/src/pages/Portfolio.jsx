@@ -6,6 +6,8 @@ import { useState, useEffect } from 'react'
 import PageDecoration from '../components/PageDecoration'
 import bg from "../assets/bgSection.png"
 import {motion} from "framer-motion"
+import imageContent from "../assets/dani.png"
+import "../styles/Pages/Portfolio.css"
 
 const Portfolio = () => {
 
@@ -70,11 +72,12 @@ const Portfolio = () => {
               id='motion-div1'
             >
               <div className='content-motion'>
+                
+                <div className="right-container-info">
+                    <img src={imageContent} alt="" id='img-dani' />
+                </div>
                 <div className="left-container-info">
                   <p>Nosso ponto de partida e principal base de atuação é a defesa das mulheres no âmbito das estruturas familiares, que são os espaços onde as diferenças – essências distintas - podem, primeiramente, se transformar em desigualdades – privilégios de uns em detrimento de outros - e se transmutar em violências.</p>
-                </div>
-                <div className="right-container-info">
-
                 </div>
                 
               </div>
@@ -87,16 +90,17 @@ const Portfolio = () => {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 1.6, ease: "easeOut" }}
                 viewport={{ once: true }}
                 id='motion-div2'
               >
                 <div className='content-motion'>
-                  <div className="left-container-info">
-                  <p>E, em reforço, faz-se necessário impulsionar outras formas de emancipação da mulher. Daí nasce a necessidade de ampliar a atuação para a proteção da sua produção intelectual e de sua base empresarial, sobretudo na vertente educacional; do seu acesso à saúde, aos benefícios previdenciários e à possibilidade de transcendência dos frutos do seu trabalho e interesses pessoais, a partir do planejamento sucessório.</p>
-                  </div>
+                  
                   <div className="right-container-info">
-
+                    <img src={imageContent} alt="" id='img-dani' />
+                  </div>
+                  <div className="left-container-info">
+                    <p>E, em reforço, faz-se necessário impulsionar outras formas de emancipação da mulher. Daí nasce a necessidade de ampliar a atuação para a proteção da sua produção intelectual e de sua base empresarial, sobretudo na vertente educacional; do seu acesso à saúde, aos benefícios previdenciários e à possibilidade de transcendência dos frutos do seu trabalho e interesses pessoais, a partir do planejamento sucessório.</p>
                   </div>
                 
                 </div>
@@ -108,7 +112,7 @@ const Portfolio = () => {
             <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  transition={{ duration: 1.6, ease: "easeOut" }}
                   viewport={{ once: true }}
                   id='motion-div3'
                 >
@@ -116,13 +120,21 @@ const Portfolio = () => {
                     <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 1.6, ease: "easeOut" }}
                     viewport={{ once: true }}
                     id='motion-div3'
                     >  
-                      <div className="left-container-info">
-                        <p>A atuação é coordenada e executada em maior parte pela Dra. @daniellelucenaadv , mas também conta com a colaboração e alta competência técnica de outras advogadas, formando uma grande rede de mulheres que defendem mulheres e vivem juntas um potente processo de empoderamento, em vias individual e coletiva, como deve ser.</p>
+                      <div className='content-motion'>
+                       
+                        <div className="right-container-info">
+                          <img src={imageContent} alt="" id='img-dani' />
+                        </div>
+                        <div className="left-container-info">
+                          <p>A atuação é coordenada e executada em maior parte pela Dra. @daniellelucenaadv , mas também conta com a colaboração e alta competência técnica de outras advogadas, formando uma grande rede de mulheres que defendem mulheres e vivem juntas um potente processo de empoderamento, em vias individual e coletiva, como deve ser.</p>
+                        </div>
+                      
                       </div>
+                    
                     </motion.div>
                     
                   <div className="right-container-info">
