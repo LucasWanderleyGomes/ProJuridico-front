@@ -84,3 +84,82 @@
     width: 500px;
     height: 450px;
 }
+
+.section-portfolio{
+    width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    margin-top: 28px;
+}
+
+.right-box-processo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+}
+
+.processo-cont{
+    display: flex;
+    align-items: center;
+    padding: 23px 42px;
+    border-top-left-radius: 98px;
+    border-bottom-right-radius: 98px;
+    background-color: #123a54;
+    gap: 18px;
+}
+
+.left-box-processo{
+    display: flex;
+    align-items: center;
+    background-color: #fdbc58;
+    padding: 30px;
+    border-radius: 100px;
+}
+
+.right-box-processo>p{
+    margin-bottom: 0;
+}
+
+.icon-card{
+    font-size: 75px;
+}
+
+#select-dropdown{
+   
+}
+.options-container{
+    display: flex;
+    justify-content: end;
+}
+.options-container{
+
+}
+.options-select{
+    font-size: 14px;
+}
+
+#categoria{
+    color: #fdbc58;
+    font-family: "Cardo", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#titulo{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 36px;
+}
+
+#descricao{
+    color: #e0e0e0;
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 100;
+}

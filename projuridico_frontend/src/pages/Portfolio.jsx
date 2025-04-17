@@ -63,7 +63,7 @@ const Portfolio = () => {
      
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" id='carrossel-bg'>
-          <div class="carousel-item active" data-bs-interval="40000" id='item-carrossel1'>
+          <div class="carousel-item active" data-bs-interval="6000" id='item-carrossel1'>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ const Portfolio = () => {
             </motion.div>
 
           </div>
-          <div class="carousel-item" data-bs-interval="40000" id='item-carrossel2'>
+          <div class="carousel-item" data-bs-interval="6000" id='item-carrossel2'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ const Portfolio = () => {
             </motion.div>
             
           </div>
-          <div class="carousel-item" data-bs-interval="40000" id='item-carrossel3'>
+          <div class="carousel-item" data-bs-interval="6000" id='item-carrossel3'>
             <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -164,9 +164,9 @@ const Portfolio = () => {
         viewport={{ once: true }}
         className="p-8 bg-white rounded-2xl shadow-xl"
       >
-        <div>
-          {portfolio.map((processo) => <Processo processo={processo} onDelete={handleDeleteProcesso} key={processo.id}/> )}
-        </div>
+        <section className='section-portfolio'>
+          {portfolio.map((processo) => <Processo processo={processo} onDelete={handleDeleteProcesso} key={processo.id} /> )}
+        </section>
       </motion.div>
       
       
