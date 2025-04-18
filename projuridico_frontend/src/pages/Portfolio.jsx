@@ -8,6 +8,7 @@ import bg from "../assets/bgSection.png"
 import {motion} from "framer-motion"
 import imageContent from "../assets/dani.png"
 import "../styles/Pages/Portfolio.css"
+import bgPorftolio from "../assets/bg-portfolio.png"
 
 const Portfolio = () => {
 
@@ -158,13 +159,18 @@ const Portfolio = () => {
       </div>
       
       <motion.div
+
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
         className="p-8 bg-white rounded-2xl shadow-xl"
+        id='div-portfolio'
       >
-        <section className='section-portfolio'>
+        
+        <section className='section-portfolio' style={{ backgroundImage: `url(${bgPorftolio})`}} >
+          <h2 id='title-section-processos'>Destaques de processos</h2>
+          <p id='texto-sec-proc'>“ O direito é um poder passivo ou pacificado pelo Estado e é sinônimo de poder, pois sem esta participação e legitimação democrática, só resta a violência, a descrença e a barbárie.” (Hannah Arendt – Filósofa )</p>
           {portfolio.map((processo) => <Processo processo={processo} onDelete={handleDeleteProcesso} key={processo.id} /> )}
         </section>
       </motion.div>

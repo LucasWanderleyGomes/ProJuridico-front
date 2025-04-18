@@ -87,36 +87,58 @@
 
 .section-portfolio{
     width: 100%;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 28px;
-    margin-top: 28px;
+    background-color: #fcfdf4;
+    box-shadow: inset 0 0 10px #6a6a6a;
+    box-sizing: border-box;
+    padding: 50px 0px;
+    background-size: cover;
+}
+.section-portfolio>h2{
+    margin-bottom: 0;
+}
+.section-portfolio>p{
+    margin-bottom: 0;
 }
 
 .right-box-processo{
     display: flex;
     flex-direction: column;
-    margin-bottom: 37px;
 }
 
 .processo-cont{
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 23px 42px;
     border-top-left-radius: 98px;
     border-bottom-right-radius: 98px;
     background-color: #123a54;
-    gap: 18px;
 }
-
-.left-box-processo{
+.baixo-processo{
     display: flex;
     align-items: center;
-    background-color: #fdbc58;
-    padding: 30px;
-    border-radius: 100px;
+}
+
+.cima-processo{
+    width: 100%;
+    display: flex
+;
+    justify-content: end;
+    height: 15px;
+}
+.left-box-processo{
+    display: flex
+    ;
+        align-items: center;
+        background-color: #fdbc58;
+        padding: 30px;
+        border-radius: 319px;
+        height: 135px;
+        width: 135px;
 }
 
 .right-box-processo>p{
@@ -162,4 +184,22 @@
     font-size: 16px;
     font-family: "Cabin", sans-serif;
     font-weight: 100;
+}
+
+
+#title-section-processos{
+    margin-top: 35px;
+    color: #123a54;
+    font-family: "Cardo", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+#texto-sec-proc{
+    text-align: center;
+    width: 60%;
+    font-size: 26px;
+    margin-bottom: 25px;
 }

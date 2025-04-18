@@ -1,3 +1,65 @@
 .processo-cont{
     width: 85%;
 }
+
+#icone-reticencia{
+    color: black;
+}
+
+.options-container{
+    width: 100%;
+}
+
+.botoes-inside-mod{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 50%;
+    justify-content: center;
+    border: none;
+}
+#botao-deletar{
+    background-color: rgb(250, 104, 104);
+}
+#botao-deletar>p{
+    color: white;
+}
+#trash{
+    color: white;
+}
+#botao-esconder{
+    background-color: #fdbc58;
+}
+#botao-esconder>p{
+    color: white;
+}
+#closed-eye{
+    color: white;
+}
+.botoes-inside-mod>p{
+    margin-bottom: 0;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+#button-modal{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#three-dots{
+    font-size: 46px;
+    color: #fdbc58;
+    letter-spacing: 2px;
+}
+    
+.baixo-processo{
+    width: 100%;
+    display: flex;
+    gap: 22px;
+    min-height: 170px;
+}
