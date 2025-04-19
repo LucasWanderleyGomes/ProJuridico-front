@@ -20,8 +20,8 @@ const ForgotPassword = () => {
         <div id='container-form'>
           <FormEsqueciSenha route="/api/v2/auth/users/reset_password/" />
           <div className="box-esqueci">
-              <p className='criar-conta'>Já possui uma conta?</p>
-              <Link className='criar-conta' to="/login"> Entre na sua conta aqui.</Link>
+              <p className='criar-conta'>Não possui uma conta?</p>
+              <Link className='criar-conta' to="/cadastro"> Cadastre-se aqui.</Link>
           </div>
         </div>
       </section>

@@ -3,6 +3,8 @@ import api from "../api"
 import { useNavigate } from "react-router-dom"
 import {ACCESS_TOKEN, REFRESH_TOKEN} from "../constants"
 import "../styles/components/FormCadastro.css"
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 const FormCadastro = ({route, method}) =>{
     const [username, setUserName] = useState("")
@@ -10,6 +12,7 @@ const FormCadastro = ({route, method}) =>{
     const [password, setPassword] = useState("")
     const [re_password, setRe_Password] = useState("")
     const [loading, setLoading] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
 
     const navigate = useNavigate()
 
@@ -55,20 +58,36 @@ const FormCadastro = ({route, method}) =>{
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
             />
-            <input 
-                type="password" 
-                className="input senha" 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Senha"
-            />
-            <input 
-                type="password" 
-                className="input senha" 
-                value={re_password}
-                onChange={(e) => setRe_Password(e.target.value)}
-                placeholder="Confirme sua senha"
-            />
+           <div className="container-senha">
+                <input 
+                    type={showPassword ? "text" : "password"}
+                    className="input senha"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Senha"
+                />
+                <span 
+                    className="olhinho"
+                    onClick={() => setShowPassword(!showPassword)}
+                >
+                    {showPassword ? <FaEye/> : <FaEyeSlash/> }
+                </span>
+            </div>
+            <div className="container-senha">
+                <input 
+                    type={showPassword ? "text" : "password"}
+                    className="input senha"
+                    value={re_password}
+                    onChange={(e) => setRe_Password(e.target.value)}
+                    placeholder="Confirme sua senha"
+                />
+                <span 
+                    className="olhinho"
+                    onClick={() => setShowPassword(!showPassword)}
+                >
+                    {showPassword ? <FaEye/> : <FaEyeSlash/> }
+                </span>
+            </div>
 
             <button type="submit" className="botao-logar">
                 {titulo}
