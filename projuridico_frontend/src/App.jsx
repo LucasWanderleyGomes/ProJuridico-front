@@ -12,6 +12,8 @@ import Comunidade from "./pages/Comunidade"
 import Consultoria from "./pages/Consultoria"
 import Portfolio from "./pages/Portfolio"
 import Contato from "./pages/Contato"
+import ForgotPassword from './pages/ForgotPassword'
+import ConfirmPasswordRed from "./pages/ConfirmPasswordRed"
 
 // importando os componentes das nossas rotas protegidas =-=-=-=-
 
@@ -52,6 +54,20 @@ function App() {
           path="/login"
           element={
             <Login/>
+          }
+        />
+
+        <Route
+          path="/forgot-password"
+          element={
+            <ForgotPassword />
+          }
+        />
+
+        <Route
+          path="/confirm-credencials"
+          element={
+            <ConfirmPasswordRed />
           }
         />
 

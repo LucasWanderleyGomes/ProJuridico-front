@@ -9,6 +9,7 @@ import bg from '../assets/background-forms.png'
 
 //  components
 
+import { Link } from 'react-router-dom';
 import Form from '../components/Form'
 import InfoLoginCadastro from '../components/InfoLoginCadastro';
 
@@ -24,10 +25,10 @@ const Login = () => {
         <InfoLoginCadastro />
         <div id='container-form'>
           <Form route="/api/v2/auth/jwt/create/" method="login" />
-          <a href="#" id='link-esqueci'>Esqueci minha senha.</a>
+          <Link to="/forgot-password" id='link-esqueci'>Esqueci minha senha.</Link>
           <div className="box-esqueci">
               <p className='criar-conta'>Não possui uma conta?</p>
-              <a className='criar-conta' href="#"> Crie sua conta aqui.</a>
+              <Link className='criar-conta' to="/cadastro"> Crie sua conta aqui.</Link>
           </div>
         </div>
       </section>

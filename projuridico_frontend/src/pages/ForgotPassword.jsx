@@ -1,25 +1,24 @@
 import React from 'react'
 
-// componentes
+// components
 
-import FormCadastro from '../components/FormCadastro'
 import InfoLoginCadastro from '../components/InfoLoginCadastro'
-import bg from '../assets/background-forms.png'
+import bg from "../assets/background-forms.png"
+import FormCadastro from "../components/FormCadastro"
 import { Link } from 'react-router-dom'
-
-// estilos
+// styles
 
 import "../styles/Pages/Login.css"
+import "../styles/Pages/ForgotPassword.css"
+import FormEsqueciSenha from '../components/FormEsqueciSenha'
 
-const Cadastro = () => {
-
+const ForgotPassword = () => {
   return (
-  
     <main className='bg-style' style={{ backgroundImage: `url(${bg})` }}>
       <section className='content-section'>
-        <InfoLoginCadastro title={"Venha fazer parte da nossa comunidade e nos ajude a crescer"} text={"Crie a sua conta para verificar os eventos mais próximos da sua região"}/>
+        <InfoLoginCadastro title={"Esqueceu sua senha?"} text={"Não se preocupe, iremos te ajudar a recuperar suas credenciais! "} />
         <div id='container-form'>
-          <FormCadastro route="/api/v2/auth/users/" method="register" />
+          <FormEsqueciSenha route="/api/v2/auth/users/reset_password/" />
           <div className="box-esqueci">
               <p className='criar-conta'>Já possui uma conta?</p>
               <Link className='criar-conta' to="/login"> Entre na sua conta aqui.</Link>
@@ -28,7 +27,8 @@ const Cadastro = () => {
       </section>
     </main>
 
+
   )
 }
 
-export default Cadastro
+export default ForgotPassword
