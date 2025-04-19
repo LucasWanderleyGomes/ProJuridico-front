@@ -7,6 +7,7 @@ import "../styles/components/FormCadastro.css"
 const FormEsqueciSenha = ({route}) => {
    const [email, setEmail] = useState("")
    const navigate = useNavigate()
+   const [loading, setLoading] = useState(false)
 
    const handleSubmit = async(e) =>{
         setLoading(true)
@@ -15,7 +16,7 @@ const FormEsqueciSenha = ({route}) => {
         try{
 
             await api.post(route, {email})
-            console.log("Requisição enviada com sucesso!")
+            console.log("Requisição enviada ")
             navigate("/confirm-credencials")
         
             
@@ -34,7 +35,7 @@ const FormEsqueciSenha = ({route}) => {
             <p>Informe seu email cadastrado na plataforma, para que passamos ajudá-lo(a) na recuperação da sua senha!</p>
             <input 
                 id="input-email-forgot"
-                type="email" 
+                type="text" 
                 className="input email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
