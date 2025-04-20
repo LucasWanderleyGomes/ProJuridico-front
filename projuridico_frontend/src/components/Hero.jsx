@@ -21,7 +21,6 @@ const Hero = () => {
         </div>
         
         <div className="call">
-            <button className="login">Login</button>
 
             <div className ="more">
              <h3>Nossa missão é contribuir para o fortalecimento da autonomia das mulheres </h3>
