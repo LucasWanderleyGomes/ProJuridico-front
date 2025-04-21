@@ -1,0 +1,200 @@
+.section-box-vantagens{
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.vantagens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vantagens>p{
+    margin-bottom: 0;
+    color: white;
+}
+
+#title-vantagens{
+    margin-bottom: 0px;
+    text-align: start;
+    color: white;
+    display: flex
+;
+    gap: 15px;
+}
+
+#title-vantagens>p{
+    margin-bottom: 0;
+    font-size: 47px;
+    margin-top: 39px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#number-span{
+    font-size: 114px;
+    font-family: "Cardo", serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #fdbc58;
+}
+
+.texts{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px
+}
+
+#invis{
+    color: #5c3e1200;
+}
+
+.inicio-linha{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inicio-linha>h2{
+    color: #fdbb5800;
+    margin-bottom: 0;
+}
+#chart-line{
+    color: #fdbc58;
+    font-size: 40px;
+}
+#compass{
+    color: #fdbc58;
+    font-size: 40px;
+}
+#questionaire{
+    color: #fdbc58;
+    font-size: 40px;
+}
+
+.box-text{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Mulish, sans-serif;
+    max-width: 450px;
+}
+
+.box-text-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#motion-div-consult-1{
+    width: 93%;
+    opacity: 1;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section-consultas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(209, 220, 226);
+}
+
+.content-consultas{
+    width: 93%;
+    display: grid
+;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    padding: 65px 0px;
+}
+#motion-div-consult-2{
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper-card{
+    transition: 0.3s ease-in-out;
+}
+.wrapper-card:hover{
+    transform: scale(1.08);
+}
+
+.cabecalho-consultorias{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+#title-avs{
+    font-family: "Cardo", serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #123A54;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+#content-cabecalho{
+    max-width: 95%;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+    color: rgb(73, 73, 73);
+}
+
+.container-cabecalho{
+    margin-top:70px;
+    width: 93%;
+    display: flex;
+    gap: 10px;
+}
+
+.icones-cabecalho{
+    width: 70%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+#form-buscar{
+    width: 100%;
+}
+
+#barra-busca{
+    width: 85%;
+    border: none;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 12px;
+}
+#txt-busca{
+    font-size: 16px;
+    text-align: end;
+    width: 100%;
+}
+#bot-busca{
+    width: 15%;
+    padding: 12px;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fdbc58;
+}
+#icone-busca{
+    font-size: 19px;
+}

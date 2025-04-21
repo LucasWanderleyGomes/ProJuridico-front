@@ -44,6 +44,8 @@ p{
     font-style: black;
     margin: 0;
     font-size: 72px;
+    text-decoration: none;
+    color: #fdbc58;
 }
 
 .container-infos{
