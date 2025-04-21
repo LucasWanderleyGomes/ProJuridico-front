@@ -56,8 +56,8 @@ const SuporteList = () => {
                 className="header"
                 onClick={() => toggleExpand(chamado.id)}
               >
-                <strong>{chamado.nome}</strong> ({chamado.email}) -{" "}
-                {chamado.telefone || "Sem telefone"}
+                <strong>{chamado.nome}<br></br>Email: ({chamado.email}) <br></br>contato:{" "}
+                {chamado.telefone || "Sem telefone"}</strong>
                 <br />
                 <small>{new Date(chamado.criado_em).toLocaleString()}</small>
               </div>

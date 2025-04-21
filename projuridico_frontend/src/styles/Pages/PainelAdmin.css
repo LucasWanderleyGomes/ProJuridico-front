@@ -1,0 +1,42 @@
+.painel-admin {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #123A54;
+    padding: 5rem 2rem;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .painel-admin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: #123A54;
+    z-index: -1;
+  }
+  
+  .painel-admin__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    position: relative;
+    color: #FDBC58;
+  }
+  
+  .painel-admin__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, #FDBC58, #ffffff);
+    border-radius: 3px;
+  }
+  
