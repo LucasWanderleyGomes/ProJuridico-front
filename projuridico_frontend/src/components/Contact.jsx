@@ -38,14 +38,23 @@ const Contact = () => {
 
       <div className="contact-info">
         <div className="info-section">
-          <h2 className="info-title">Endereço</h2>
-          <p className="info-text">Rua nº 89, Lorem ipsum dolor sit amet</p>
 
-          <h2 className="info-title">Telefone</h2>
-          <p className="info-text">83 9 1111-3333</p>
+          <div className="box-info"> 
         
-          <h2 className="info-title">Email</h2>
-          <p className="info-text">emailficticio@hotmail.com</p>
+           <h2 className="info-title">Endereço</h2>
+           <p className="info-text">Rua nº 89, Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div className="box-info">
+           <h2 className="info-title">Telefone</h2>
+           <p className="info-text">83 9 1111-3333</p>
+        
+          </div>
+          <div className="box-info">
+           <h2 className="info-title">Email</h2>
+           <p className="info-text">emailficticio@hotmail.com</p>
+          </div>
+      
         </div>
       </div>
 
