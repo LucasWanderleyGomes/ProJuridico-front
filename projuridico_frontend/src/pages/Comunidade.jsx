@@ -5,7 +5,6 @@ const Comunidade = () => {
   return (
     <div>
         <Header/>
-        <p>Comunidade</p>
     </div>
   )
 }

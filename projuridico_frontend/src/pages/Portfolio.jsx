@@ -64,7 +64,7 @@ const Portfolio = () => {
      
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" id='carrossel-bg'>
-          <div class="carousel-item active" data-bs-interval="6000" id='item-carrossel1'>
+          <div class="carousel-item active" data-bs-interval="4000" id='item-carrossel1'>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ const Portfolio = () => {
             </motion.div>
 
           </div>
-          <div class="carousel-item" data-bs-interval="6000" id='item-carrossel2'>
+          <div class="carousel-item" data-bs-interval="4000" id='item-carrossel2'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +109,7 @@ const Portfolio = () => {
             </motion.div>
             
           </div>
-          <div class="carousel-item" data-bs-interval="6000" id='item-carrossel3'>
+          <div class="carousel-item" data-bs-interval="4000" id='item-carrossel3'>
             <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ const Portfolio = () => {
       </motion.div>
       
       
-      <h3>Adicionar um processo</h3>
+      {/* <h3>Adicionar um processo</h3>
       <form onSubmit={handleCriarProcesso} className='form-processo'>
         <label htmlFor="categoria">Categoria</label>
         <input 
@@ -206,7 +206,7 @@ const Portfolio = () => {
           value={descricao}
         ></textarea>
         <button type='submit' value='submit'>Criar</button>
-      </form>
+      </form> */}
     </>
   )
 }
