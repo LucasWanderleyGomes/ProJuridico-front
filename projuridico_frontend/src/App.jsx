@@ -12,6 +12,7 @@ import Comunidade from "./pages/Comunidade"
 import Consultoria from "./pages/Consultoria"
 import Portfolio from "./pages/Portfolio"
 import Contato from "./pages/Contato"
+import PainelAdmin from "./pages/PainelAdmin"
 
 // importando os componentes das nossas rotas protegidas =-=-=-=-
 
@@ -105,6 +106,12 @@ function App() {
             <Contato/>
           } 
         />
+        
+        <Route 
+          path="/painel-admin"
+          element={<PainelAdmin />}
+        />
+
 
       </Routes>
     </BrowserRouter>

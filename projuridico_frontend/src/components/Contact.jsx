@@ -1,6 +1,32 @@
+import { useState } from "react";
+import axios from "axios";
 import "../styles/components/Contact.css";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    nome: "",
+    email: "",
+    telefone: "",
+    mensagem: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post("http://localhost:8000/api/v2/mensagens/", formData);
+      alert("Mensagem enviada com sucesso!");
+      setFormData({ nome: "", email: "", telefone: "", mensagem: "" });
+    } catch (error) {
+      console.error(error);
+      alert("Erro ao enviar mensagem.");
+    }
+  };
+
   return (
     <section className="contact">
       <div className="contact-header">
@@ -20,7 +46,6 @@ const Contact = () => {
         
           <h2 className="info-title">Email</h2>
           <p className="info-text">emailficticio@hotmail.com</p>
-          
         </div>
       </div>
 
@@ -30,30 +55,30 @@ const Contact = () => {
         <h3>Envie-nos uma mensagem</h3>
         <p className="message-subtitle">Possui sugestões, mensagens, agradecimentos ou alguma coisa que queira nos falar? Preencha o formulário abaixo:</p>
 
-        <div className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Nome</label>
-            <input type="text" id="name" />
+            <label htmlFor="nome">Nome</label>
+            <input type="text" id="nome" value={formData.nome} onChange={handleChange} required />
           </div>
 
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" value={formData.email} onChange={handleChange} required />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Telefone</label>
-              <input type="tel" id="phone" />
+              <label htmlFor="telefone">Telefone</label>
+              <input type="tel" id="telefone" value={formData.telefone} onChange={handleChange} />
             </div>
           </div>
 
           <div className="form-group">
-            <label htmlFor="message">Mensagem</label>
-            <textarea id="message" rows="4"></textarea>
+            <label htmlFor="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" value={formData.mensagem} onChange={handleChange} required></textarea>
           </div>
 
-          <button className="submit-button">ENVIAR</button>
-        </div>
+          <button type="submit" className="submit-button">ENVIAR</button>
+        </form>
       </div>
     </section>
   );

@@ -1,0 +1,71 @@
+.suporte-list {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .suporte-list h2 {
+    text-align: center;
+  }
+  
+  .suporte-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .suporte-list li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .suporte-list li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .suporte-list .header {
+    cursor: pointer;
+  }
+  
+  .suporte-list .header small {
+    color: #ffffff;
+  }
+  
+  .suporte-list .expand-content {
+    margin-top: 10px;
+  }
+  
+  .suporte-list .expand-content p {
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .suporte-list .status {
+    font-weight: bold;
+  }
+  
+  .suporte-list .status.respondido {
+    color: green;
+  }
+  
+  .suporte-list .status.pendente {
+    color: orange;
+  }
+  
+  .suporte-list button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suporte-list button:hover {
+    background-color: #0558b1;
+  }
+  
