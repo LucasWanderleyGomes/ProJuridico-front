@@ -102,7 +102,7 @@ const Consultoria = () => {
                 id="barra-busca"
             
               />
-              <button id="bot-busca" type="submit">< FaSearch/></button>
+              <button id="bot-busca" type="submit">< FaSearch id="icone-busca"/></button>
             </form>
           </div>
 
@@ -112,9 +112,15 @@ const Consultoria = () => {
         <div className="content-consultas">
 
           {consultoria.map((consulta) => 
-            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.6, ease: "easeOut" }} viewport={{ once: true }} id="motion-div-consult-2"
-            > 
-              <Consulta consulta={consulta} key={consulta.id}/>
+            <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                viewport={{ once: true }}
+                id="motion-div-consult-2"
+                className="wrapper-card"> 
+              <Consulta consulta={consulta} key={consulta.id} id="consulta-card"/>
             </motion.div>
           
           )}
