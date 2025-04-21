@@ -141,6 +141,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin-bottom: 0;
 }
 
 .container-cabecalho{
@@ -152,9 +153,11 @@
 
 .icones-cabecalho{
     width: 70%;
-    display: flex;
+    display: flex
+;
     flex-direction: column;
     align-items: end;
+    justify-content: end;
 }
 
 #form-buscar{
@@ -170,8 +173,9 @@
     padding: 12px;
 }
 #txt-busca{
+    font-size: 16px;
     text-align: end;
-    width: 70%;
+    width: 100%;
 }
 #bot-busca{
     width: 15%;
