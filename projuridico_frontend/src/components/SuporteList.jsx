@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/components/SuporteList.css"
+import "../styles/components/SuporteList.css";
 
 const SuporteList = () => {
   const [chamados, setChamados] = useState([]);
@@ -41,46 +41,65 @@ const SuporteList = () => {
     }
   };
 
-  if (loading) return <p>Carregando chamados...</p>;
+  if (loading) return <div className="loading-container">Carregando chamados...</div>;
 
   return (
     <section className="suporte-list">
-      <h2>Mensagens Recebidas</h2>
+      <header className="suporte-header">
+        <h2>Mensagens Recebidas</h2>
+        <p className="total-chamados">{chamados.length} {chamados.length === 1 ? 'mensagem' : 'mensagens'}</p>
+      </header>
+
       {chamados.length === 0 ? (
-        <p>Nenhum chamado encontrado.</p>
+        <div className="empty-state">
+          <p>Nenhum chamado encontrado.</p>
+        </div>
       ) : (
-        <ul>
+        <ul className="chamados-grid">
           {chamados.map((chamado) => (
-            <li key={chamado.id}>
+            <li 
+              key={chamado.id} 
+              className={`chamado-card ${expandedId === chamado.id ? 'expanded' : ''}`}
+              aria-expanded={expandedId === chamado.id}
+            >
               <div
-                className="header"
+                className="card-header"
                 onClick={() => toggleExpand(chamado.id)}
+                role="button"
+                tabIndex="0"
+                onKeyDown={(e) => e.key === 'Enter' && toggleExpand(chamado.id)}
               >
-                <strong>{chamado.nome}<br></br>Email: ({chamado.email}) <br></br>contato:{" "}
-                {chamado.telefone || "Sem telefone"}</strong>
-                <br />
-                <small>{new Date(chamado.criado_em).toLocaleString()}</small>
+                <div className="user-info">
+                  <h3 className="user-name">{chamado.nome}</h3>
+                  <p className="user-email">{chamado.email}</p>
+                  <p className="user-phone">{chamado.telefone || "Sem telefone"}</p>
+                </div>
+                <div className="meta-info">
+                  <time dateTime={chamado.criado_em}>
+                    {new Date(chamado.criado_em).toLocaleString()}
+                  </time>
+                  <span className={`status-badge ${chamado.respondido ? "respondido" : "pendente"}`}>
+                    {chamado.respondido ? "Respondido" : "Pendente"}
+                  </span>
+                </div>
               </div>
 
               {expandedId === chamado.id && (
-                <div className="expand-content">
-                  <hr />
-                  <p>{chamado.mensagem}</p>
-                  <p>
-                    Status:{" "}
-                    <span
-                      className={`status ${
-                        chamado.respondido ? "respondido" : "pendente"
-                      }`}
-                    >
-                      {chamado.respondido ? "Respondido" : "Pendente"}
-                    </span>
-                  </p>
-                  {!chamado.respondido && (
-                    <button onClick={() => marcarComoRespondido(chamado.id)}>
-                      Marcar como Respondido
-                    </button>
-                  )}
+                <div className="card-details">
+                  <div className="message-container">
+                    <h4>Mensagem:</h4>
+                    <p className="message-content">{chamado.mensagem}</p>
+                  </div>
+                  <div className="actions">
+                    {!chamado.respondido && (
+                      <button 
+                        onClick={() => marcarComoRespondido(chamado.id)}
+                        className="respond-button"
+                      >
+                        Marcar como Respondido
+                      </button>
+                    )}
+                  </div>
                 </div>
               )}
             </li>

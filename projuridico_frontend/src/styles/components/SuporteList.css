@@ -3,118 +3,181 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 5rem 2rem;
+  padding-top: 6rem;
   background-color: #123A54;
   position: relative;
+  min-height: 100vh;
 }
 
-.suporte-list::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100%;
-  background-color: #123A54;
-  z-index: -1;
+/* Header styles */
+.suporte-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
 }
 
 .suporte-list h2 {
-  text-align: center;
   font-size: 2.75rem;
-  margin-bottom: 3.5rem;
   color: #ffffff;
   font-weight: 700;
   position: relative;
   padding-bottom: 1rem;
+  margin: 0;
 }
 
 .suporte-list h2::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 100px;
   height: 4px;
   background: linear-gradient(90deg, #ffffff, #ffffff);
   border-radius: 2px;
 }
 
-.suporte-list ul {
+.total-chamados {
+  color: #FDBC58;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* List and cards */
+.chamados-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
   list-style: none;
   padding: 0;
 }
 
-.suporte-list li {
+.chamado-card {
   background: #184f74;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   color: #ffffff;
 }
 
-.suporte-list li:hover {
+.chamado-card.expanded {
+  box-shadow: 0 0 0 2px #FDBC58;
+}
+
+.chamado-card:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
-.suporte-list .header {
+/* Card header */
+.card-header {
   cursor: pointer;
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.suporte-list .header strong {
+.user-info {
+  flex: 1;
+}
+
+.user-name {
   font-size: 1.25rem;
   color: #ffffff;
   font-weight: 600;
+  margin: 0 0 0.5rem 0;
 }
 
-.suporte-list .header small {
+.user-email, .user-phone {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin: 0.3rem 0;
   display: block;
-  font-size: 0.9rem;
+}
+
+.meta-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.meta-info time {
+  font-size: 0.85rem;
   color: #ccc;
-  margin-top: 4px;
 }
 
-.suporte-list .expand-content {
-  margin-top: 1rem;
-}
-
-.suporte-list .expand-content p {
-  font-size: 1rem;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-}
-
-.suporte-list .status {
+.status-badge {
+  font-size: 0.85rem;
   font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
 }
 
-.suporte-list .status.respondido {
+.status-badge.respondido {
+  background-color: rgba(0, 255, 136, 0.1);
   color: #00ff88;
 }
 
-.suporte-list .status.pendente {
+.status-badge.pendente {
+  background-color: rgba(253, 188, 88, 0.1);
   color: #FDBC58;
 }
 
-.suporte-list button {
-  margin-top: 1rem;
-  padding: 8px 16px;
+/* Expanded content */
+.card-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.message-container h4 {
+  color: #FDBC58;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.message-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Button */
+.respond-button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 6px;
   border: none;
   background-color: #FDBC58;
   color: #123A54;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: right;
 }
 
-.suporte-list button:hover {
+.respond-button:hover {
   background-color: #ffe2a8;
-  color: #123A54;
+  transform: translateY(-2px);
+}
+
+/* Empty and loading states */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 3rem;
+  color: #ffffff;
+  font-size: 1.1rem;
 }

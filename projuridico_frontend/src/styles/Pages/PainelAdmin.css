@@ -5,9 +5,9 @@
     padding: 5rem 2rem;
     position: relative;
     color: #ffffff;
-  }
+}
   
-  .painel-admin::before {
+.painel-admin::before {
     content: '';
     position: absolute;
     top: 0;
@@ -15,28 +15,27 @@
     transform: translateX(-50%);
     width: 100vw;
     height: 100%;
-    background-color: #123A54;
+    background-color: #ffffff;
     z-index: -1;
-  }
+}
+
+.painel-admin.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #123A54;
+    color: #ffffff;
+}
   
-  .painel-admin__title {
+.painel-admin__title {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 4rem;
     position: relative;
     color: #FDBC58;
-  }
+}
   
-  .painel-admin__title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 5px;
-    background: linear-gradient(90deg, #FDBC58, #ffffff);
-    border-radius: 3px;
-  }
+
   
