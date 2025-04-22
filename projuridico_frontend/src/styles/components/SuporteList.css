@@ -9,7 +9,7 @@
   min-height: 100vh;
 }
 
-/* Header styles */
+
 .suporte-header {
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,6 @@
   margin-bottom: 0.8rem;
 }
 
-/* List and cards */
 .chamados-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -125,7 +124,7 @@
   color: #FDBC58;
 }
 
-/* Expanded content */
+
 .card-details {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
@@ -148,7 +147,7 @@
   word-break: break-word;
 }
 
-/* Button */
+
 .respond-button {
   margin-top: 1.5rem;
   padding: 0.6rem 1.2rem;
@@ -167,7 +166,7 @@
   transform: translateY(-2px);
 }
 
-/* Empty and loading states */
+
 .empty-state {
   text-align: center;
   padding: 3rem;
