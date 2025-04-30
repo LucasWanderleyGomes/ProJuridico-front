@@ -65,10 +65,7 @@ const Processo = ({ processo, onDelete }) => {
         <div className='left-box-processo'>
           {handlegetIcon(processo.categoria)}
         </div>
-        <div className='right-box-processo'>
-          
-          
-          
+        <div className='right-box-processo'>   
           <p id='categoria'>{processo.categoria}</p>
           <p id='titulo'>{processo.titulo}</p>
           <p id='descricao'>{processo.descricao}</p>
