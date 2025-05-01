@@ -16,6 +16,7 @@ ul{
 
 .main-content.section{
     display: flex;
+    flex-direction: row;
 }
 .left-content-info{
     width: 22%;

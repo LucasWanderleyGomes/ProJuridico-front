@@ -23,7 +23,7 @@ const Header = () => {
             <Link to="/portfolio" className="links-nav" >Advocacia</Link>
             <Link to="/consultoria" className="links-nav">Consultoria</Link>
             <Link to="/contato" className="links-nav">Contato</Link>
-            <Link to="/comunidade" className="links-nav">Comunidade</Link>
+            <Link to="/comunidade/eventos" className="links-nav">Comunidade</Link>
 
       </nav>
       <div className="right-header-cont">

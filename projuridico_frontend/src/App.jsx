@@ -15,6 +15,7 @@ import Contato from "./pages/Contato"
 import ForgotPassword from './pages/ForgotPassword'
 import ConfirmPasswordRed from "./pages/ConfirmPasswordRed"
 import PainelAdmin from "./pages/PainelAdmin"
+import ComunidadeBlog from './pages/ComunidadeBlog'
 
 // importando os componentes das nossas rotas protegidas =-=-=-=-
 
@@ -108,10 +109,19 @@ function App() {
         />
 
         <Route 
-          path="/comunidade" 
+          path="/comunidade/eventos" 
           element={
             <ProtectedRoute>
               <Comunidade />
+            </ProtectedRoute>
+          } 
+        />
+
+        <Route 
+          path="/comunidade/blog" 
+          element={
+            <ProtectedRoute>
+              <ComunidadeBlog />
             </ProtectedRoute>
           } 
         />

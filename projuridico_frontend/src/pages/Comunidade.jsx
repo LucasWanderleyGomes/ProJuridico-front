@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from '../components/Header'
 import NavCom from '../components/comunityComponents/NavCom'
-import Posts from '../components/comunityComponents/Posts'
-import Eventos from '../components/comunityComponents/Eventos'
+import Posts from '../components/comunityComponents/Eventos'
 import InfoCom from '../components/comunityComponents/InfoCom'
+
 
 import '../styles/Pages/Comunidade.css'
 
@@ -22,7 +22,9 @@ const Comunidade = () => {
             <InfoCom/>
           </div>
           
-          <Eventos/>
+         <div>
+          <Posts/>
+         </div>
           
           
         </section>
