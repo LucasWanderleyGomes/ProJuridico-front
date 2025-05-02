@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../components/Header"
 import Processo from "../components/Processo"
+import FooterPages from '../components/FooterPages'
 import api from "../api"
 import { useState, useEffect } from 'react'
 import PageDecoration from '../components/PageDecoration'
@@ -207,6 +208,7 @@ const Portfolio = () => {
         ></textarea>
         <button type='submit' value='submit'>Criar</button>
       </form> */}
+      <FooterPages/>
     </>
   )
 }

@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import NavCom from '../components/comunityComponents/NavCom'
 import Posts from '../components/comunityComponents/Eventos'
 import InfoCom from '../components/comunityComponents/InfoCom'
-
+import FooterPages from '../components/FooterPages'
 
 import '../styles/Pages/Comunidade.css'
 
@@ -29,7 +29,7 @@ const Comunidade = () => {
           
         </section>
        
-        
+        <FooterPages/>
     </div>
   )
 }

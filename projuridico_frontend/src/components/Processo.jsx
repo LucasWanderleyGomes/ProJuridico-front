@@ -8,6 +8,7 @@ import { MdOutlineWork } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { FaTrash } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { BiWorld } from "react-icons/bi";
 
 const Processo = ({ processo, onDelete }) => {
   
@@ -24,7 +25,8 @@ const Processo = ({ processo, onDelete }) => {
       case 'Laboral':
         return <MdOutlineWork className='icon-card'/>;
       default:
-        return null;
+          return < BiWorld className='icon-card'/>;
+      
     }
   };
 
