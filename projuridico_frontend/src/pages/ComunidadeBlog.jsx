@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import NavCom from '../components/comunityComponents/NavCom'
 import InfoCom from '../components/comunityComponents/InfoCom'
 import BlogPosts from '../components/comunityComponents/BlogPosts'
+import FooterPages from '../components/FooterPages'
 
 import '../styles/Pages/Comunidade.css'
 
@@ -25,7 +26,7 @@ const ComunidadeBlog = () => {
               
             </section>
            
-            
+            <FooterPages/>
         </div>
       )
 }

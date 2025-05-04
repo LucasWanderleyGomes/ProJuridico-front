@@ -14,12 +14,25 @@ ul{
     padding: 45px;
 }
 
-.main-content.section{
+.main-content-section{
     display: flex;
     flex-direction: row;
+    background-color: rgb(251, 246, 246);
+    gap: 14px;
+    justify-content: start;
 }
 .left-content-info{
     width: 22%;
     display: flex;
     flex-direction: column;
+}
+
+.container-eventos{
+    width: 55%;
+}
+
+.informativos-eventos{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
 }

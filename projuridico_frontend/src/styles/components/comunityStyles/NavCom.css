@@ -10,7 +10,7 @@
     margin: 0;
     padding: 40px;
     /* box-shadow: 0px 11px 10px -7px rgba(0, 0, 0, 0.1); */
-    
+    background-color: white;
     border-bottom: thin solid rgb(219, 219, 219);
 }
 .item-lista{
