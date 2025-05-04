@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: start;
     gap: 14px;
+    width: 100%;
 }
 .container-post>p{
     font-size: 15px;
@@ -44,4 +45,13 @@
 .email-user{
     color: rgb(153, 153, 153);
     font-size: 10px;
+}
+
+.imagens-post{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.imagem-container{
+    width: 100%;
 }

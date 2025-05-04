@@ -1,7 +1,7 @@
 
 import react from 'react'
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // importando os componentes referentes às páginas =-=-=-=-
 
 import Login from "./pages/Login"

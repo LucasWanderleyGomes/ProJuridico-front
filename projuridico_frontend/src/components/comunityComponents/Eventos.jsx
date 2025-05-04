@@ -22,7 +22,7 @@ const Posts = () => {
   return (
     <div className="postagens-container">
       
-      <section className='criacao-de-postagem'>
+      {/* <section className='criacao-de-postagem'>
 
         <form action="" method="post">
           <input type="text" name="" id="" />
@@ -30,7 +30,7 @@ const Posts = () => {
           <button type="submit">Publicar</button>
         </form>
         
-      </section>
+      </section> */}
       {postagens.map((post) => (
         <div key={post.id} className="postagem-card">
           
@@ -52,7 +52,7 @@ const Posts = () => {
           <p className='conteudo-evento'>{post.conteudo}</p>
           {post.upload && (
             <div className='imagem-container'>
-              <img className='imagens-post' src={post.upload} alt={`Imagem da postagem ${post.id}`} style={{ maxWidth: '100%', height: 'auto' }} />
+              <img className='imagens-post' src={post.upload} alt={`Imagem da postagem ${post.id}`}  />
             </div>
           )}
           
