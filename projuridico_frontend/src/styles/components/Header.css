@@ -164,7 +164,7 @@
 }
 
 #sair{
-  color: red;
+  color: rgb(250, 82, 82);
 }
 
 #botao-sair{
@@ -172,4 +172,5 @@
   align-items: center;
   gap: 8.5px;
   font-size: 14px;
+  color: rgb(250, 82, 82);
 }

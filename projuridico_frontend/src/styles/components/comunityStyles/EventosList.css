@@ -91,3 +91,59 @@
 .imagem-container{
     width: 100%;
 }
+
+.box-data{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#botao-opcoes-eventos{
+   background-color: white;
+   border: none;
+   padding: 0;
+}
+
+.icone-tres-pontos-eventos{
+    color: #123A54;
+}
+
+#box-botao-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-postagem{
+    padding: 12px;
+}
+
+#menu-postagem>li{
+    margin-bottom: 10px;
+}
+
+#menu-postagem>li>a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icones-ruins-menu{
+    color: rgb(250, 82, 82);
+}
+
+#link-ruim{
+    color: rgb(250, 82, 82);
+}
+
+#trash-menu-ev{
+    font-size: 20px;
+}
+
+#link-ruim-button{
+    color: rgb(250, 82, 82);
+    display: flex
+;
+    align-items: center;
+    gap: 13px;
+    padding-left: 14px;
+}
