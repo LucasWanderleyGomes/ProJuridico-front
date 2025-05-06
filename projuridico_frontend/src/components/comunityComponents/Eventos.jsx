@@ -2,9 +2,10 @@ import React from 'react'
 import api from '../../api'
 import { useState, useEffect } from 'react'
 import { IoPersonCircle } from "react-icons/io5";
-import { BsThreeDotsVertical } from "react-icons/bs";
+
 import { getCurrentUser } from '../GetUserConst';
 
+import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaEyeSlash } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
 import { GoAlertFill } from "react-icons/go";
@@ -87,7 +88,7 @@ const Posts = () => {
 
 
                 </ul>
-            </div>
+              </div>
             </div>
             
           </div>
