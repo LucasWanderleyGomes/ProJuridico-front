@@ -16,6 +16,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import ConfirmPasswordRed from "./pages/ConfirmPasswordRed"
 import PainelAdmin from "./pages/PainelAdmin"
 import ComunidadeBlog from './pages/ComunidadeBlog'
+import Perfil from './pages/Perfil';
 
 // importando os componentes das nossas rotas protegidas =-=-=-=-
 
@@ -115,6 +116,16 @@ function App() {
               <Comunidade />
             </ProtectedRoute>
           } 
+        />
+
+      
+        <Route
+          path="/perfil/me"
+          element={
+              <ProtectedRoute>
+                <Perfil/>
+              </ProtectedRoute>
+          }
         />
 
         <Route 

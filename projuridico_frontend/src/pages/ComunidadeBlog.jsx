@@ -21,10 +21,10 @@ const ComunidadeBlog = () => {
                 </div>
                 
                 <div className='container-eventos'>
-                    {/* <section className='informativos-eventos'>
+                    <section className='informativos-eventos'>
                         <h2>Postagens da Comunidade</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad consectetur alias sint delectus, temporibus qui tenetur deserunt. Labore suscipit inventore nesciunt aut numquam ex, impedit neque? Cumque, tenetur voluptatum.</p>
-                    </section> */}
+                    </section>
                     <BlogPosts/>
                 </div>
                 

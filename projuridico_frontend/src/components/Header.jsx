@@ -46,7 +46,7 @@ const Header = () => {
             </button>
             <ul className="dropdown-menu" id="menu-dropdown">
               <li className="itens-dropdown-menu">
-                <Link to='/' id="ext-links-drop" className="dropdown-item">
+                <Link to='/perfil/me' id="ext-links-drop" className="dropdown-item">
                   <IoPersonCircleSharp className="icones-drop" /> Perfil
                 </Link>
               </li>
