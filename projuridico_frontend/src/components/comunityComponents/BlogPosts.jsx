@@ -41,14 +41,13 @@ const BlogPosts = () => {
         if (res.status === 200) {
           alert(`Postagem deletada com sucesso`)
           getBlogPosts()
-        } else {
-          alert(`Erro ao deletar a postagem`)
-        }
+        } 
       })
       .catch((error) => {
         console.log(error)
         alert("Erro ao tentar deletar a postagem")
       })
+      getBlogPosts()
   }
 
 
