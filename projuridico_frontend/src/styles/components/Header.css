@@ -107,3 +107,70 @@
   font-size: 17px;
   color: #fdbc58;
 }
+
+#button-prof{
+ background-color: white;
+ border: none;
+ border-radius: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s ease-in-out;
+  transform: scale();
+}
+#button-prof:hover{
+  background-color: #123A54;
+  border: thin solid white;
+}
+
+#button-prof:hover>.profile{
+  color: white;
+}
+
+#button-prof:hover>.dropdown-toggle::after{
+  color: #123A54;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+
+.profile{
+  font-size: 16px;
+  color: #123A54; 
+  position: absolute;
+}
+
+#menu-dropdown{
+  width: 243px;
+  padding: 10px 0px;
+}
+
+.itens-dropdown-menu{
+  display: flex;
+  gap: 10px;
+}
+
+#ext-links-drop{
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8.5px;
+}
+
+.icones-drop{
+  font-size: 15px;
+}
+
+#sair{
+  color: rgb(250, 82, 82);
+}
+
+#botao-sair{
+  display: flex;
+  align-items: center;
+  gap: 8.5px;
+  font-size: 14px;
+  color: rgb(250, 82, 82);
+}

@@ -1,7 +1,7 @@
 
 import react from 'react'
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // importando os componentes referentes às páginas =-=-=-=-
 
 import Login from "./pages/Login"
@@ -15,6 +15,11 @@ import Contato from "./pages/Contato"
 import ForgotPassword from './pages/ForgotPassword'
 import ConfirmPasswordRed from "./pages/ConfirmPasswordRed"
 import PainelAdmin from "./pages/PainelAdmin"
+import ComunidadeBlog from './pages/ComunidadeBlog'
+import Perfil from './pages/Perfil';
+
+// importando os componentes das nossas rotas protegidas =-=-=-=-
+
 import ProtectedRoute from "./components/ProtectedRoute"
 
 function Logout(){
@@ -105,10 +110,29 @@ function App() {
         />
 
         <Route 
-          path="/comunidade" 
+          path="/comunidade/eventos" 
           element={
             <ProtectedRoute>
               <Comunidade />
+            </ProtectedRoute>
+          } 
+        />
+
+      
+        <Route
+          path="/perfil/me"
+          element={
+              <ProtectedRoute>
+                <Perfil/>
+              </ProtectedRoute>
+          }
+        />
+
+        <Route 
+          path="/comunidade/blog" 
+          element={
+            <ProtectedRoute>
+              <ComunidadeBlog />
             </ProtectedRoute>
           } 
         />

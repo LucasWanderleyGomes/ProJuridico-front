@@ -51,7 +51,7 @@ const Form = ({route, method}) =>{
             <p id="texto-formulario">Entre com suas credenciais</p>
             <input 
                 type="email" 
-                className="input email" 
+                className="input" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"

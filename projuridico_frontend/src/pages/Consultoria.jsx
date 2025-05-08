@@ -7,6 +7,8 @@ import Consulta from "../components/Consulta"
 import '../styles/Pages/Consultoria.css'
 import bgConsulta from "../assets/consulta-juridica.png"
 import {motion} from "framer-motion"
+import FooterPages from "../components/FooterPages"
+
 
 import { FaChartLine } from "react-icons/fa";
 import { FaCompass } from "react-icons/fa6";
@@ -130,7 +132,7 @@ const Consultoria = () => {
       </section>
       
      
-      
+      <FooterPages/>
     </div>
   )
 }

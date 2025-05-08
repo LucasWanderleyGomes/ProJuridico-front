@@ -46,14 +46,14 @@ const FormCadastro = ({route, method}) =>{
             <h1>{titulo}</h1>
             <input 
                 type="text" 
-                className="input email" 
+                className="input" 
                 value={username}
                 onChange={(e) => setUserName(e.target.value)}
                 placeholder="Nome"
             />
             <input 
                 type="email" 
-                className="input email" 
+                className="input" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"

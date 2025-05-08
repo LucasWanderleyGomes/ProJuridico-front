@@ -36,7 +36,7 @@ const FormEsqueciSenha = ({route}) => {
             <input 
                 id="input-email-forgot"
                 type="text" 
-                className="input email" 
+                className="input" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
