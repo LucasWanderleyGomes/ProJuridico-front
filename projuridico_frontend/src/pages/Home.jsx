@@ -19,7 +19,6 @@ const Home = () => {
         <Community />
 
       </main>
-      <Contact />
 
     </div>
   );

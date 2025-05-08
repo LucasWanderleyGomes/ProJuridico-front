@@ -1,37 +1,41 @@
 .Box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
     gap: 2rem;
-    margin: 2rem 0;
-
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
 }
-  
+
 .box1, .box2, .box3 {
     background-color: #f7f7f7;
     padding: 2rem 1.5rem;
-    width: 250px;
+    width: 100%; /* Responsivo por padrão */
+    max-width: 250px; /* Largura máxima */
     border-radius: 8px;
     text-align: center;
-    position: flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 320px;
-    margin-left: 100px;
- 
-    
-    
-    
+    position: relative;
+    margin-left: 0; /* Removi o margin-left fixo */
+    transition: all 0.3s ease; /* Adicionei transição suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
-  
+
+.box1:hover, .box2:hover, .box3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
 .box1::before,
 .box2::before,
 .box3::before {
-
     content: '1';
     position: absolute;
-    top: 15px;
+    top: 3px;
     left: 50%;
     transform: translateX(-50%);
     width: 30px;
@@ -45,31 +49,31 @@
     justify-content: center;
     font-size: 14px;
     background-color: #fff;
- }
-  
+    
+}
+
 .box2::before {
     content: '2';
 }
-  
+
 .box3::before {
     content: '3';
 }
-  
-  
+
 .box p {
-    margin-top: 60px;
+    margin-top: 100px;
     font-size: 14px;
     color: #333;
+    line-height: 1.5;
 }
-  
- 
+
 .box1::after {
     content: '❓';
     font-size: 20px;
     color: orange;
     margin-top: auto;
 }
-  
+
 .box2::after {
     content: '⌘'; 
     font-size: 20px;
@@ -83,4 +87,42 @@
     color: orange;
     margin-top: auto;
 }
-  
+
+
+@media (max-width: 900px) {
+    .Box {
+        gap: 1.5rem;
+    }
+    
+    .box1, .box2, .box3 {
+        max-width: 220px;
+        height: 300px;
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box1, .box2, .box3 {
+        max-width: 280px;
+        height: auto;
+        min-height: 250px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .box p {
+        margin-top: 0px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box1, .box2, .box3 {
+        width: 100%;
+        max-width: 100%;
+    }
+}

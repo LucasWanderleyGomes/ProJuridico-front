@@ -15,9 +15,6 @@ import Contato from "./pages/Contato"
 import ForgotPassword from './pages/ForgotPassword'
 import ConfirmPasswordRed from "./pages/ConfirmPasswordRed"
 import PainelAdmin from "./pages/PainelAdmin"
-
-// importando os componentes das nossas rotas protegidas =-=-=-=-
-
 import ProtectedRoute from "./components/ProtectedRoute"
 
 function Logout(){

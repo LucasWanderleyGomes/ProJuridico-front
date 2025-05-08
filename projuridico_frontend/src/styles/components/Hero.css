@@ -1,209 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Cabin", sans-serif;
-}
-
+/* Estilos base (Mobile First) */
 .main {
     display: flex;
-    flex-direction: flex-start;
-    height: 90vh;
-    /* width: 100vw; */
-    overflow: hidden;
-}
-
-.hero {
-    position: relative;
-    display: block;
-    background-color: #ffffff;
-    height: 100%;
-    width: 70%;
-}
-
-.hero header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100%;
-    padding: 0 32px;
-}
-
-.hero header h2 {
-    font-family: "Titillium Web", sans-serif;
-    font-size: 2.5em;
-    font-weight: 900;
-    color: #FDBC58;
-}
-
-.hero header .items {
+  }
+  
+.hero {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.5rem 1rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-    gap: 32px;
-}
-
-.hero header .items a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.1em;
-    color: #000000;
-
-}
-.hero .action {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
-
-.call {
-    display: block;
-    position: relative;
-    background-color: #123A54;
-    height: 100%;
-    width: 30%;
-}
-
-.call button.login {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px #ffffff solid;
-    border-radius: 8px;
-    padding: 12px 22px;
-    margin: 16px;
-    font-family: "Cabin", sans-serif;
-    
-}
-
-.call .more {
-    display: flex;
-    padding: 0 48px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
-    height: 100%;
-}
 
-.call .more h3{
-    font-family: "Cardo", serif;
-    font-family: Cardo, sans-serif;
-    font-size: 1.5em;
-    font-weight: 100;
-    color: #FDBC58;
-    margin-top: 20px;
 }
-.call .more p {
-    font-family: "Cabin", sans-serif;
-    font-size: 1.1em;
+  
+.call {
+    background-color: #123A54;
+    width: 100%;
+    padding: 2rem 1rem;
+    color: white;
+}
+  
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    top: -70px;
+    position: relative;
+}
+  
+.action img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    top: 123px;
+    position: relative;
+}
+  
+.name {
+    text-align: center;
+}
+  
+.name p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+  
+.name h4 {
+    font-size: 1.1rem;
     font-weight: 400;
-    color: #ffffff;
-    margin-top: 20px;
+    color: #555;
 }
-.call .more button {
+  
+.more {
+    text-align: center;
+    padding: 0 0.5rem;
+}
+  
+.more h3 {
+    font-family: "Cardo", serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #FDBC58;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+  
+.more p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+  
+.more button {
     background-color: #FFFFFF;
     color: #123A54;
-    font-family: "Cabin", sans-serif;
-    font-size: 1.2em;
-    font-weight: 400;
-    border-radius: 5px;
-    padding: 10px 20px;
+    padding: 0.8rem 1.8rem;
     border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    margin-top: 20px;
-}
-
-
-
-.box {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
+    transition: all 0.3s ease;
 }
   
-.box1, .box2, .box3 {
-    background-color: #f7f7f7;
-    padding: 2rem 1.5rem;
-    width: 250px;
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 320px;
-}
-  
-  
-.box1::before,
-.box2::before,
-.box3::before {
-
-    content: '1';
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border: 1px solid orange;
-    border-radius: 50%;
-    color: orange;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    background-color: #fff;
- }
-  
-.box2::before {
-    content: '2';
-}
-  
-.box3::before {
-    content: '3';
-}
-  
-  
-.box p {
-    margin-top: 60px;
-    font-size: 14px;
-    color: #333;
+.more button:hover {
+    background-color: #FDBC58;
+    transform: translateY(-2px);
 }
   
  
-.box1::after {
-    content: '❓';
-    font-size: 20px;
-    color: orange;
-    margin-top: auto;
-}
-  
-.box2::after {
-    content: '⌘'; 
-    font-size: 20px;
-    color: orange;
-    margin-top: auto;
+@media (min-width: 768px) {
+.main {
+    flex-direction: row;
+    min-height: 90vh;
 }
 
-.box3::after {
-    content: '🧠'; 
-    font-size: 20px;
-    color: orange;
-    margin-top: auto;
+.hero {
+    width: 60%;
+    padding: 2rem;
+    justify-content: center;
 }
-  
+
+.call {
+    width: 40%;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.action {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.name {
+    text-align: left;
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.name p {
+    font-size: 1.8rem;
+}
+
+.name h4 {
+    font-size: 1.2rem;
+}
+
+.action img {
+    max-width: 250px;
+}
+
+.more {
+    text-align: left;
+    padding: 0;
+}
+
+.more h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.more p {
+    font-size: 1.1rem;
+}
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+.hero {
+    width: 70%;
+    padding: 3rem;
+}
+
+.call {
+    width: 30%;
+    padding: 4rem 3rem;
+}
+
+.name p {
+    font-size: 2rem;
+}
+
+.name h4 {
+    font-size: 1.3rem;
+}
+
+.action img {
+    max-width: 290px;
+}
+
+.more h3 {
+    font-size: 1.8rem;
+}
+}
+
+/* Telas grandes (1200px+) */
+@media (min-width: 1200px) {
+.hero {
+    padding: 3rem 5rem;
+}
+
+.call {
+    padding: 4rem;
+}
+
+.name p {
+    font-size: 2.2rem;
+}
+
+.more h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+}

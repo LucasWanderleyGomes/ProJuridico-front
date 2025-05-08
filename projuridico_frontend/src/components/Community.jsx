@@ -29,16 +29,18 @@ const Community = () => {
   ];
 
   return (
-    <section className="community">
-      <h2 className="community__title">Comunidade</h2>
-      
-      <div className="community__grid">
-        {cards.map((card, index) => (
-          <div key={index} className="community__card">
-            <h3 className="community__card-title">{card.title}</h3>
-            <p className="community__card-content">{card.content}</p>
-          </div>
-        ))}
+    <section className="main">
+      <div className="community">
+        <h2 className="community__title">Comunidade</h2>
+        
+        <div className="community__grid">
+          {cards.map((card, index) => (
+            <div key={index} className="community__card">
+              <h3 className="community__card-title">{card.title}</h3>
+              <p className="community__card-content">{card.content}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
