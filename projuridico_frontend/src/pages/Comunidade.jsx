@@ -4,6 +4,8 @@ import NavCom from '../components/comunityComponents/NavCom'
 import Posts from '../components/comunityComponents/Eventos'
 import InfoCom from '../components/comunityComponents/InfoCom'
 import FooterPages from '../components/FooterPages'
+import DecoradorComunidade from '../components/comunityComponents/DecoradorComunidade'
+import eventosgBg from "../assets/capa-eventos.png"
 
 import '../styles/Pages/Comunidade.css'
 
@@ -24,8 +26,8 @@ const Comunidade = () => {
           
          <div className='container-eventos'>
           <section className='informativos-eventos'>
-            <h2>Eventos da Comunidade</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad consectetur alias sint delectus, temporibus qui tenetur deserunt. Labore suscipit inventore nesciunt aut numquam ex, impedit neque? Cumque, tenetur voluptatum.</p>
+            <DecoradorComunidade img={eventosgBg} titulo={"Eventos"} texto={"Seja muito bem-vindo(a) à nossa página de Eventos! Aqui é o ponto de encontro para você ficar por dentro de tudo o que acontece e para compartilhar os seus próprios eventos com a nossa comunidade."}/>
+            
           </section>
           <Posts/>
          </div>

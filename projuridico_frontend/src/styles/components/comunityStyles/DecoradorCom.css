@@ -1,0 +1,32 @@
+#div-imagem{
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+}
+
+.decorador-comunidade{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#infos-txt-decorador{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#infos-txt-decorador>p{
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#titulo-decorador-com{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    color:#123A54 ;
+}

@@ -3,3 +3,30 @@
     flex-direction: column;
     align-items: start;
 }
+
+.content-inputs{
+    border: thin solid rgb(186, 186, 186);
+    border-radius: 8px;
+    padding: 9px;
+}
+
+.inputs-form-event{
+    border: none;
+}
+.img-descricao{
+    display: flex;
+}
+
+#file-blog{
+    max-width: 80px;
+}
+.inputs-form-event-blog{
+    color: rgb(81, 81, 81);
+    border-radius: 8px;
+   
+    padding-left: 10px;
+    height: 45px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+}

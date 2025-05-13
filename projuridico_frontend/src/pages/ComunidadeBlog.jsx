@@ -4,6 +4,9 @@ import NavCom from '../components/comunityComponents/NavCom'
 import InfoCom from '../components/comunityComponents/InfoCom'
 import BlogPosts from '../components/comunityComponents/BlogPosts'
 import FooterPages from '../components/FooterPages'
+import DecoradorComunidade from '../components/comunityComponents/DecoradorComunidade'
+import blogBg from "../assets/capa-blog.png"
+
 
 import '../styles/Pages/Comunidade.css'
 import '../styles/Pages/ComunidadeBlog.css'
@@ -22,8 +25,7 @@ const ComunidadeBlog = () => {
                 
                 <div className='container-eventos'>
                     <section className='informativos-eventos'>
-                        <h2>Postagens da Comunidade</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad consectetur alias sint delectus, temporibus qui tenetur deserunt. Labore suscipit inventore nesciunt aut numquam ex, impedit neque? Cumque, tenetur voluptatum.</p>
+                        <DecoradorComunidade img={blogBg} titulo={"Blog"} texto={"Seja bem-vindo(a) ao nosso Blog! Este é o seu espaço para compartilhar o dia a dia, os momentos especiais e as experiências que tornam a sua vida única. Feito por nós e para nós. Quanto mais a gente compartilhar, mais rica e divertida a nossa comunidade se torna."}/>
                     </section>
                     <BlogPosts/>
                 </div>
