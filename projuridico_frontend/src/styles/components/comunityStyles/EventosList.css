@@ -147,3 +147,94 @@
     gap: 13px;
     padding-left: 14px;
 }
+
+.container-eventos{
+    margin-bottom: 40px;
+}
+
+.inputs-form-event{
+    color: rgb(81, 81, 81);
+    border-radius: 8px;
+    border: thin solid rgb(200, 200, 200);
+    padding-left: 10px;
+    height: 45px;
+    padding: 12px;
+}
+
+.adicionar-evento-container{
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-criar-evento{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imagem-titulo{
+    display: flex;
+    gap: 10px;
+}
+
+.imagem-enviar{
+    display: flex;
+    gap: 10px;
+}
+
+#descricao-form{
+    width: 100%;
+}
+
+#botao-env-evento{
+    width: 30%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    background-color: #fdbc58;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.botao-escolher-arquivo {
+    background-color: #123A54; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-escolher-arquivo:hover {
+    background-color: #e0952d;
+}
+
+#icone-img{
+    color: white;
+    font-size: 20px;
+}
+
+.container-botao{
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-form{
+    width: 50%;
+}
+
+#textinho-cima-form{
+    margin: 20px 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
