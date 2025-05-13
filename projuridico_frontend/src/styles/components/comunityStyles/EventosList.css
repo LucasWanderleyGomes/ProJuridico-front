@@ -152,14 +152,7 @@
     margin-bottom: 40px;
 }
 
-.inputs-form-event{
-    color: rgb(81, 81, 81);
-    border-radius: 8px;
-    border: thin solid rgb(200, 200, 200);
-    padding-left: 10px;
-    height: 45px;
-    padding: 12px;
-}
+
 
 .adicionar-evento-container{
     padding: 20px;
@@ -237,4 +230,13 @@
     font-size: 14px;
     width: 100%;
     text-align: center;
+}
+
+.inputs-form-event{
+    color: rgb(81, 81, 81);
+    border-radius: 8px;
+    border: thin solid rgb(134, 134, 134);
+    padding-left: 10px;
+    height: 45px;
+    padding: 12px;
 }

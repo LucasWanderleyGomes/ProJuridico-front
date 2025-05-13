@@ -11,6 +11,7 @@
 .container-post>p{
     font-size: 15px;
     margin-bottom: 0;
+    word-break: break-word;
 }
 .user-info{
     width: 100%;
