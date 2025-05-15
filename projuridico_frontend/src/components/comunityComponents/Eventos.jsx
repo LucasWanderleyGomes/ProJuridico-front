@@ -10,6 +10,8 @@ import { GoAlertFill } from "react-icons/go";
 import { useRef } from 'react';
 import '../../styles/components/comunityStyles/EventosList.css'
 
+import { IoHeart } from "react-icons/io5";
+import { IoHeartOutline } from "react-icons/io5";
 import { IoMdImages } from "react-icons/io";
 
 const Posts = () => {
@@ -83,6 +85,23 @@ const Posts = () => {
             console.log(msgErro)
         })
     }
+
+    const handleToggleLike = async (postId) => {
+        try {
+            const res = await api.post(`/api/v2/comunidades/1/eventos/${postId}/like/`);
+            const { liked, likes_count } = res.data;
+
+            setEventos((prev) =>
+            prev.map((post) =>
+                post.id === postId
+                ? { ...post, likes_count, has_liked: liked }
+                : post
+            )
+            );
+        } catch (error) {
+            console.error("Erro ao curtir/descurtir", error);
+        }
+    };
 
     return (
         <div className="postagens-container">
@@ -178,6 +197,22 @@ const Posts = () => {
                             <img className='imagens-post' src={post.upload} alt={`Imagem da postagem ${post.id}`}  />
                         </div>
                     )}
+                    <div className='cont-likes'>
+                        {post.has_liked ? (
+                            <IoHeart
+                            className='icone-like'
+                            
+                            onClick={() => handleToggleLike(post.id)}
+                            />
+                        ) : (
+                            <IoHeartOutline
+                            className='icone-like'
+                            
+                            onClick={() => handleToggleLike(post.id)}
+                            />
+                        )}
+                        {post.likes_count}
+                        </div>
                 </div>
             ))}
         </div>

@@ -1,12 +1,12 @@
 
 
 .postagens-container{
-    display: flex
-    ;
-        flex-direction: column;
-        gap: 6px;
-        align-items: center;
-        margin-bottom: 40px;
+      display: flex
+;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .postagem-card{
@@ -239,4 +239,14 @@
     padding-left: 10px;
     height: 45px;
     padding: 12px;
+}
+.cont-likes{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.icone-like{
+    color: #123A54;
+    font-size: 22px;
+    cursor: pointer;
 }
