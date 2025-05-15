@@ -8,16 +8,15 @@ import { MdDelete } from "react-icons/md";
 import { GoAlertFill } from "react-icons/go";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-const BlogItem = ({blogItem, onDelete}) => {
+import { IoHeart } from "react-icons/io5";
+import { IoHeartOutline } from "react-icons/io5";
+
+const BlogItem = ({blogItem, onDelete, onLike}) => {
 
   const currentUser = getCurrentUser()
 
-  
-
-
   return (
 
-    
     <div className='container-post'>
 
       <div className='user-info'>
@@ -64,6 +63,20 @@ const BlogItem = ({blogItem, onDelete}) => {
               <img className='imagens-post' src={blogItem.upload} alt={`Imagem da postagem ${blogItem.id}`} style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
       )}
+      <div className='cont-likes'>
+          {blogItem.has_liked ? (
+            <IoHeart
+              className='icone-like'                 
+              onClick={() => onLike(blogItem.id)}
+            />
+            ) : (
+            <IoHeartOutline
+            className='icone-like'                   
+            onClick={() => onLike(blogItem.id)}
+            />
+            )}
+            {blogItem.likes_count}
+      </div>
 
     </div>
   )

@@ -212,7 +212,7 @@ const Posts = () => {
                             />
                         )}
                         {post.likes_count}
-                        </div>
+                    </div>
                 </div>
             ))}
         </div>

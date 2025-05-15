@@ -81,6 +81,12 @@ const BlogPosts = () => {
       })
   }
 
+  const handleLike = (blogPostId) => {
+    api.post(`/api/v2/comunidades/1/blogPosts/${blogPostId}/like/`)
+      .then(() => getBlogPosts())
+      .catch(() => alert("Erro ao curtir/descurtir"));
+  };
+
   return (
     <div className='postagens-container'>
       <div className='adicionar-evento-container'>
@@ -145,6 +151,7 @@ const BlogPosts = () => {
             key={blogItem.id}
             blogItem={blogItem}
             onDelete={() => handleDeletePostagem(blogItem.id)}
+            onLike={() => handleLike(blogItem.id)}
           />
         ))}
       </aside>
