@@ -62,14 +62,14 @@ const FormRedefinirSenha = ({route}) => {
             </div>
             <input 
                 type="text" 
-                className="input email" 
+                className="input" 
                 value={uid}
                 onChange={(e) => setUid(e.target.value)}
                 placeholder="Uid"
             />
             <input 
                 type="text" 
-                className="input email" 
+                className="input" 
                 value={token}
                 onChange={(e) => setToken(e.target.value)}
                 placeholder="Token"
