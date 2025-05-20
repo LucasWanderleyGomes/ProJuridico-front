@@ -87,18 +87,19 @@
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.2rem 4rem;
   display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1.2rem 4rem;
-    background-color: #123A54;
-    justify-content: space-between;
-    position: fixed; 
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0px 0px 1px 4px #57575726;
-    background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #123A54; /* Cor padrão ao rolar */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
 }
+
 .links-nav{
   transition: 0.2s ease-in-out;
 }
@@ -173,4 +174,23 @@
   gap: 8.5px;
   font-size: 14px;
   color: rgb(250, 82, 82);
+}
+
+
+
+.header.at-top {
+  background-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.header.scrolled {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/bg-navbar.png");
+  background-color: rgba(18, 58, 84, 0.8); /* cor escura opcional por cima da imagem */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 1px 4px #57575726;
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease-in-out;
 }

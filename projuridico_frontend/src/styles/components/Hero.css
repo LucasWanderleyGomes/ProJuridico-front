@@ -94,7 +94,29 @@
     background-color: #FDBC58;
     transform: translateY(-2px);
 }
-  
+
+.content-section-home{
+   display: flex
+;
+    width: 100%;
+    align-items: center;
+    padding: 30px;
+    background-size: cover;
+}
+
+.textos-direita{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.linha-direita{
+    background-color: #fdbc58;
+    height: 100%;
+    width: 1.6px;
+}
  
 @media (min-width: 768px) {
 .main {

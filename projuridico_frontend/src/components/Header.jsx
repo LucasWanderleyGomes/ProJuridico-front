@@ -1,8 +1,8 @@
 import "../styles/components/Header.css";
 import { Link, useNavigate } from "react-router-dom";
-import bg from "../assets/bg-navbar.png";
+// import bg from "../assets/bg-navbar.png";
 import { ACCESS_TOKEN } from "../constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Modal, Button } from "react-bootstrap"; // React-Bootstrap
 
 import { IoPersonSharp } from "react-icons/io5";
@@ -15,6 +15,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const [showModal, setShowModal] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
@@ -22,11 +23,31 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.clear();
     setShowModal(false);
-    navigate("/login"); // redireciona para login após logout
+    navigate("/login");
   };
 
+ useEffect(() => {
+    const header = document.querySelector('.header');
+
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        header.classList.remove('at-top');
+      } else {
+        header.classList.add('at-top');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Verifica ao montar o componente
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="header" style={{ backgroundImage: `url(${bg})` }}>
+   <header
+        className={`header ${isScrolled ? "scrolled" : "at-top"}`}
+  
+    >
       <div className="left-header-cont">
         <Link to="/home" className="logo">ProJuridico</Link>
       </div>
@@ -41,7 +62,7 @@ const Header = () => {
       <div className="right-header-cont">
         {token ? (
           <div className="dropdown">
-            <button id="button-prof" className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button id="button-prof" className="btn btn-secondary dropdown-toggle" type="button">
               <IoPersonSharp className="profile" />
             </button>
             <ul className="dropdown-menu" id="menu-dropdown">
@@ -52,7 +73,7 @@ const Header = () => {
               </li>
               <li className="itens-dropdown-menu">
                 <Link to='/' id="ext-links-drop" className="dropdown-item">
-                  <IoIosInformationCircle className="icones-drop" />Página de suporte
+                  <IoIosInformationCircle className="icones-drop" /> Página de suporte
                 </Link>
               </li>
               <li><hr className="dropdown-divider" /></li>
@@ -63,7 +84,6 @@ const Header = () => {
               </li>
             </ul>
 
-            
             <Modal show={showModal} onHide={handleClose} centered>
               <Modal.Header closeButton>
                 <Modal.Title>Confirmação</Modal.Title>
