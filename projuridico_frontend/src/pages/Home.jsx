@@ -20,7 +20,6 @@ const Home = () => {
         <Community />
 
       </main>
-      <Contact />
       
       <FooterPages/>
 
