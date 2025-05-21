@@ -1,5 +1,5 @@
-/* Estilos base (Mobile First) */
-.main {
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+.main-hero {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -96,28 +96,112 @@
 }
 
 .content-section-home{
-   display: flex
-;
-    width: 100%;
-    align-items: center;
-    padding: 30px;
-    background-size: cover;
-}
-
-.textos-direita{
-    width: 100%;
+       height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 20px;
+    width: 100%;
+    align-items: end;
+    padding: 30px;
+    background-size: cover;
+    justify-content: space-between;
+    gap: 55px;
+    padding-right: 100px;
+}
+.containers-hero{
+    width: 100%;
+    display: flex
+;
+    align-items: center;
+    justify-content: end;
+    gap: 60px;
+}
+.textos-direita{
+       width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+    max-width: 400px;
+    text-align: end;
 }
 
 .linha-direita{
     background-color: #fdbc58;
-    height: 100%;
+    height: 82%;
     width: 1.6px;
+    margin-right: 90px;
+    margin-top: 20px;
 }
- 
+.textos-direita>h1{
+    color: #FDBC58;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 58px;
+    margin-bottom: 0;
+}
+
+#texto-apresentacao{
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.botoes-home{
+    display: flex;
+    gap: 20px;
+}
+.agendar{
+    background-color: #f2af4bde;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+    
+}
+.saiba-mais{
+    border: thin solid #fbc97e;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FDBC58;
+    font-weight: 700;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+   
+}
+
+.icones-home{
+    color: #000000;
+    font-size: 30px;
+}
+
+#icones-cont{
+    margin-right: 90px;
+}
+.back-icones{
+    background-color: white;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.22s ease-in-out;
+}
+
+.back-icones:hover{
+    background-color: #000000;
+    border: thin solid #fbc97e;
+}
+.back-icones:hover .icones-home{
+    color: #FDBC58;
+}
+
+
 @media (min-width: 768px) {
 .main {
     flex-direction: row;

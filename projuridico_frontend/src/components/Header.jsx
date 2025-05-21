@@ -1,9 +1,8 @@
 import "../styles/components/Header.css";
 import { Link, useNavigate } from "react-router-dom";
-// import bg from "../assets/bg-navbar.png";
 import { ACCESS_TOKEN } from "../constants";
-import { useState, useEffect } from "react";
-import { Modal, Button } from "react-bootstrap"; // React-Bootstrap
+import { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
 
 import { IoPersonSharp } from "react-icons/io5";
 import { IoIosInformationCircle } from "react-icons/io";
@@ -15,7 +14,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   const [showModal, setShowModal] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
@@ -26,30 +24,10 @@ const Header = () => {
     navigate("/login");
   };
 
- useEffect(() => {
-    const header = document.querySelector('.header');
-
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        header.classList.remove('at-top');
-      } else {
-        header.classList.add('at-top');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Verifica ao montar o componente
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-   <header
-        className={`header ${isScrolled ? "scrolled" : "at-top"}`}
-  
-    >
+    <header className="header">
       <div className="left-header-cont">
-        <Link to="/home" className="logo">ProJuridico</Link>
+        <Link to="/home" className="logo">Danielle Lucena</Link>
       </div>
 
       <nav className="items">
@@ -62,7 +40,14 @@ const Header = () => {
       <div className="right-header-cont">
         {token ? (
           <div className="dropdown">
-            <button id="button-prof" className="btn btn-secondary dropdown-toggle" type="button">
+            {/* Este botão deve abrir o menu suspenso */}
+            <button
+              id="button-prof"
+              className="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown" // Adicionado para Bootstrap 5
+              aria-expanded="false"      // Adicionado para Bootstrap 5
+            >
               <IoPersonSharp className="profile" />
             </button>
             <ul className="dropdown-menu" id="menu-dropdown">
@@ -78,6 +63,7 @@ const Header = () => {
               </li>
               <li><hr className="dropdown-divider" /></li>
               <li className="itens-dropdown-menu">
+                {/* Este botão abre o modal, como já estava */}
                 <button id="botao-sair" type="button" className="dropdown-item" onClick={handleShow}>
                   <MdOutlineLogout id="sair" className="icones-drop" /> Sair da conta
                 </button>
