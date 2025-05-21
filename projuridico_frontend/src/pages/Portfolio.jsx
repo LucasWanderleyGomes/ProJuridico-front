@@ -8,8 +8,11 @@ import PageDecoration from '../components/PageDecoration'
 import bg from "../assets/bgSection.png"
 import {motion} from "framer-motion"
 import imageContent from "../assets/dani.png"
-import "../styles/Pages/Portfolio.css"
+
 import bgPorftolio from "../assets/bg-portfolio.png"
+
+
+import "../styles/Pages/Portfolio.css"
 
 const Portfolio = () => {
 

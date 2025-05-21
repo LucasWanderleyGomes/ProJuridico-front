@@ -86,7 +86,7 @@
 }
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 100;
@@ -95,7 +95,7 @@
   justify-content: space-between;
   align-items: center;
   /* This will now be the permanent background */
-  background-color: #123A54;
+  
   /* If you want the image as permanent background, use this instead: */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/bg-navbar.png");
   background-size: cover;

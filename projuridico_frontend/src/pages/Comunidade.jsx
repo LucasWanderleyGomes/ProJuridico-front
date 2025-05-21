@@ -7,6 +7,7 @@ import FooterPages from '../components/FooterPages'
 import DecoradorComunidade from '../components/comunityComponents/DecoradorComunidade'
 import eventosgBg from "../assets/capa-eventos.png"
 
+
 import '../styles/Pages/Comunidade.css'
 
 const Comunidade = () => {

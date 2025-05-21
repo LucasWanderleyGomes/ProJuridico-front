@@ -29,7 +29,7 @@ const Community = () => {
   ];
 
   return (
-    <section className="main">
+    <section className="main-com-home">
       <div className="community">
         <h2 className="community__title">Comunidade</h2>
         

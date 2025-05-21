@@ -23,7 +23,6 @@
 }
 #left-content-texts{
     width: 70%;
-    margin-top: 130px;
 }
 #right-content-texts{
     width: 30%;
@@ -59,7 +58,7 @@
 #descricao-sec{
     font-size: 15px;
     color: white;
-    max-width: 290px;
+    max-width: 413px;
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;

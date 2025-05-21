@@ -1,4 +1,11 @@
 
+.main-com-home{
+  display: flex;
+  justify-content: center;
+}
+main{
+  justify-content: center;
+}
 .community {
   width: 100%;
   margin: 0 auto;
