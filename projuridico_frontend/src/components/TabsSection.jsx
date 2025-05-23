@@ -13,11 +13,36 @@ const TabsSection = () => {
     <section className='section-tabs' style={{ backgroundImage: `url(${bgTabs})` }}>
       <div className='container-tabs-texts'>
         <div className='block-tabs'>
-          <div onClick={() => toggleTab(1)} className={toggleState === 1 ? "tabs active-tabs" : "tabs"}>
-            Advocacia
+          <div 
+            onClick={() => toggleTab(1)} 
+            className="tabs-wrapper"
+          >
+            {toggleState === 1 && (
+              <motion.div
+                layoutId="tabHighlight"
+                className="tab-highlight"
+                transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              />
+            )}
+            <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}>
+              Advocacia
+            </div>
           </div>
-          <div onClick={() => toggleTab(2)} className={toggleState === 2 ? "tabs active-tabs" : "tabs"}>
-            Consultoria
+
+          <div 
+            onClick={() => toggleTab(2)} 
+            className="tabs-wrapper"
+          >
+            {toggleState === 2 && (
+              <motion.div
+                layoutId="tabHighlight"
+                className="tab-highlight"
+                transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              />
+            )}
+            <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}>
+              Consultoria
+            </div>
           </div>
         </div>
 

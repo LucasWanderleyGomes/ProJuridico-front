@@ -57,9 +57,8 @@
 
 .active-tabs{
         background-color: white;
-    padding: 10px 22px;
+    padding: 0px 22px;
     color: #f2af4bde;
-    border-bottom: 2px solid #f2af4bde;
 }
 
 .active-content{
@@ -129,4 +128,36 @@
     padding: 3px;
     border-radius: 150px;
     border: thin solid rgb(115, 115, 115);
+}
+
+.tabs-wrapper {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.tab-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #f2af4bde;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.tabs {
+  position: relative;
+  z-index: 1;
+  padding: 0px 22px;
+  color: rgb(150, 150, 150);
+  font-size: 18px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  transition: color 0.3s;
+}
+
+.active-tabs {
+  color: #f2af4bde;
 }
