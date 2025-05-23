@@ -42,15 +42,21 @@
 
 .left-container-info{
     width: 50%;
-    padding: 50px 0px;
-    display: flex;
+    padding: 80px 0px;
+    display: flex
+;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
+
+
 .left-container-info>p{
-    color: white;
+  color: white;
     font-size: 16px;
-    text-align: right;
-    width: 100%;
+    text-align: justify;
+    /* width: 100%;*/
 }
 
 .right-container-info{
@@ -70,6 +76,7 @@
 
 #img-dani{
     width: 500px;
+    border-radius: 25px;
     height: 450px;
 }
 
@@ -109,14 +116,15 @@
 .baixo-processo{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .cima-processo{
-    width: 100%;
+        width: 100%;
     display: flex
 ;
     justify-content: end;
-    height: 15px;
+    height: 40px;
 }
 .left-box-processo{
     display: flex
@@ -190,4 +198,93 @@
     width: 60%;
     font-size: 26px;
     margin-bottom: 25px;
+}
+
+.titulo-cars-port{
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #fdbc58;
+    border-bottom: 2px solid #fdbc58;
+    font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.id-slider-port{
+
+    align-self: start;
+    border: thin solid white;
+    color: white;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+
+}
+
+.div-numero-slide{
+    margin-top: 100px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.icones-carr{
+    font-size: 25px;
+}
+
+#previous-but:hover, #next-but:hover {
+    opacity: 0.83;
+}
+
+#button-modal {
+    background-color: rgba(0, 0, 0, 0);
+    border: none; 
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tres-botoes-card{
+    font-size: 35px;
+}
+
+.modal.show .modal-dialog {
+    width: 650px;
+    transform: none;
+    top: 10vh;
+    max-width: 650px;
+}
+
+.modal-body, .modal-footer{
+    padding: 40px;
+}
+
+.modal-header{
+    padding: 20px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.div-botoes-modal-portf{
+    display: flex;
+    gap: 20px;
+}
+
+#exampleModalLabel{
+    text-align: center;
+}
+
+.fs-5 {
+    font-size: 1.55rem !important;
 }
