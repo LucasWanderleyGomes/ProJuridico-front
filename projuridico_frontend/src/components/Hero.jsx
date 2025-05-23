@@ -21,7 +21,7 @@ const Hero = () => {
                     <h1>Danielle Lucena</h1>
                     <p id="texto-apresentacao">Nossa missão é contribuir para o fortalecimento da autonomia das mulheres </p>
                     <div className="botoes-home">
-                        <Link className="agendar">Agendar consulta</Link>
+                        <Link className="agendar">Agendar atendimento</Link>
                         <Link className="saiba-mais">Saiba mais</Link>
                     </div>
                                 
