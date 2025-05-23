@@ -1,7 +1,132 @@
 .section-tabs{
-    display: flex;
+ display: flex
+;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     padding: 30px 60px;
-    
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 90px;
+    gap: 20px;
+}
+
+.block-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.content-tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tabs{
+    color: rgb(150, 150, 150);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+}
+
+.content>p{
+    color: rgb(150, 150, 150);
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.5;
+    text-align: center;
+}
+.content>h4{
+    color: rgb(150, 150, 150);
+    font-size: 18px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+}
+
+.content{
+    display: none;
+}
+
+.active-tabs{
+        background-color: white;
+    padding: 10px 22px;
+    color: #f2af4bde;
+    border-bottom: 2px solid #f2af4bde;
+}
+
+.active-content{
+      width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.active-text{
+    text-align: justify;
+}
+
+.active-text-title{
+    color: white;
+    border-bottom: 2px solid #f2af4bde;
+    padding-bottom: 3px;
+}
+
+.container-tabs-texts{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    border-radius: 23px;
+    background-color: white;
+    box-shadow: 5px 0px 15px -3px rgba(0,0,0,0.1);
+}
+
+.lista-servicos{
+    list-style: none;
+    display: flex
+;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+    border-radius: 10px;
+    /* border: thin solid rgb(195, 195, 195); */
+    text-align: center;
+    display: grid
+;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0;
+}
+.item-servicos{
+    list-style: none;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(150, 150, 150);
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+
+
+}
+.item-servicos>p{
+    width: 15%;
+    font-size: 11px;
+    padding: 3px;
+    border-radius: 150px;
+    border: thin solid rgb(115, 115, 115);
 }
