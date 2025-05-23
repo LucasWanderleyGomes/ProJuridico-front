@@ -15,8 +15,6 @@ const ComunidadeBlog = () => {
         
         <div className='content-comunidade'>
             <Header/>
-            <section id='padding-nav'>        
-            </section>
             <section className="main-content-section">
                 <div className='left-content-info'>
                     <NavCom/>

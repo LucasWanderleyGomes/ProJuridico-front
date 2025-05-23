@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 .main-hero {
-    display: flex;
+   display: flex
+;
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    background-color: #000;
   }
   
 .hero {
@@ -96,8 +98,9 @@
 }
 
 .content-section-home{
-       height: 100vh;
-    display: flex;
+         height: 100vh;
+    display: flex
+;
     flex-direction: column;
     width: 100%;
     align-items: end;
@@ -106,6 +109,7 @@
     justify-content: space-between;
     gap: 55px;
     padding-right: 100px;
+    background-color: black;
 }
 .containers-hero{
     width: 100%;
