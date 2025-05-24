@@ -7,6 +7,9 @@ import FooterPages from '../components/FooterPages'
 import DecoradorComunidade from '../components/comunityComponents/DecoradorComunidade'
 import blogBg from "../assets/capa-blog.png"
 
+// BOTAO DE SUBIR PRO TOPO LA
+
+import BotScrollUp from '../components/BotScrollUp';
 
 import '../styles/Pages/Comunidade.css'
 import '../styles/Pages/ComunidadeBlog.css'
@@ -32,6 +35,7 @@ const ComunidadeBlog = () => {
             </section>
         
             <FooterPages/>
+             <BotScrollUp/>
         </div>
     )
 }

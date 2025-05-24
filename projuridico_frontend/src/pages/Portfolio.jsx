@@ -8,6 +8,10 @@ import PageDecoration from '../components/PageDecoration'
 import bg from "../assets/bgSection.png"
 import {motion} from "framer-motion"
 
+// BOTAO DE SUBIR PRO TOPO LA
+
+import BotScrollUp from '../components/BotScrollUp';
+
 // ASSETS
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
@@ -265,6 +269,7 @@ const handleEsconderProcesso = (id) => {
         <button type='submit' value='submit'>Criar</button>
       </form> */}
       <FooterPages/>
+      <BotScrollUp/>
     </>
   )
 }

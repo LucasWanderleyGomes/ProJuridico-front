@@ -1,16 +1,19 @@
 
 .main-com-home{
-  display: flex;
-  justify-content: center;
+      width: 100%;
+    display: flex
+;
+    justify-content: center;
+    background-color: #123A54; 
 }
 main{
   justify-content: center;
 }
 .community {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 5rem 2rem;
-  background-color: #123A54; 
+  
 }
 
 .community::before {
