@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from "../components/Header"
 import Contact from "../components/Contact"
+import FooterPages from '../components/FooterPages'
 const Contato = () => {
   return (
     <div>
       <Header />
-      <p>Contato</p>
       <Contact />
+      <FooterPages/>
     </div>
   )
 }
