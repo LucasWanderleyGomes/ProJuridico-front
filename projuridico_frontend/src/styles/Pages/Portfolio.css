@@ -29,10 +29,11 @@
 }
 
 .content-motion{
-    width: 100%;
+        width: 100%;
     display: flex
 ;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 65px;
 }
 
 #previous-but, #next-but{
@@ -75,7 +76,7 @@
 }
 
 #img-dani{
-    width: 500px;
+    /* width: 500px; */
     border-radius: 25px;
     height: 450px;
 }

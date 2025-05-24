@@ -29,66 +29,69 @@ const Header = () => {
       <div className="left-header-cont">
         <Link to="/home" className="logo">Danielle Lucena</Link>
       </div>
-
-      <nav className="items">
-        <Link to="/portfolio" className="links-nav">Advocacia</Link>
-        <Link to="/consultoria" className="links-nav">Consultoria</Link>
-        <Link to="/comunidade/eventos" className="links-nav">Comunidade</Link>
-        <Link to="/contato" className="links-nav">Contato</Link>
-      </nav>
-
       <div className="right-header-cont">
-        {token ? (
-          <div className="dropdown">
-            {/* Este botão deve abrir o menu suspenso */}
-            <button
-              id="button-prof"
-              className="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown" // Adicionado para Bootstrap 5
-              aria-expanded="false"      // Adicionado para Bootstrap 5
-            >
-              <IoPersonSharp className="profile" />
-            </button>
-            <ul className="dropdown-menu" id="menu-dropdown">
-              <li className="itens-dropdown-menu">
-                <Link to='/perfil/me' id="ext-links-drop" className="dropdown-item">
-                  <IoPersonCircleSharp className="icones-drop" /> Perfil
-                </Link>
-              </li>
-              <li className="itens-dropdown-menu">
-                <Link to='/' id="ext-links-drop" className="dropdown-item">
-                  <IoIosInformationCircle className="icones-drop" /> Página de suporte
-                </Link>
-              </li>
-              <li><hr className="dropdown-divider" /></li>
-              <li className="itens-dropdown-menu">
-                {/* Este botão abre o modal, como já estava */}
-                <button id="botao-sair" type="button" className="dropdown-item" onClick={handleShow}>
-                  <MdOutlineLogout id="sair" className="icones-drop" /> Sair da conta
-                </button>
-              </li>
-            </ul>
+          <nav className="items">
+          <Link to="/portfolio" className="links-nav">Advocacia</Link>
+          <Link to="/consultoria" className="links-nav">Consultoria</Link>
+          <Link to="/comunidade/eventos" className="links-nav">Comunidade</Link>
+          <Link to="/contato" className="links-nav">Contato</Link>
+        </nav>
 
-            <Modal show={showModal} onHide={handleClose} centered>
-              <Modal.Header closeButton>
-                <Modal.Title>Confirmação</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>Tem certeza que deseja sair?</Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Cancelar
-                </Button>
-                <Button variant="primary" onClick={handleLogout}>
-                  Sair
-                </Button>
-              </Modal.Footer>
-            </Modal>
+        <div className="right-header-cont" >
+            {token ? (
+              <div className="dropdown">
+                {/* Este botão deve abrir o menu suspenso */}
+                <button
+                  id="button-prof"
+                  className="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown" // Adicionado para Bootstrap 5
+                  aria-expanded="false"      // Adicionado para Bootstrap 5
+                >
+                  <IoPersonSharp className="profile" />
+                </button>
+                <ul className="dropdown-menu" id="menu-dropdown">
+                  <li className="itens-dropdown-menu">
+                    <Link to='/perfil/me' id="ext-links-drop" className="dropdown-item">
+                      <IoPersonCircleSharp className="icones-drop" /> Perfil
+                    </Link>
+                  </li>
+                  <li className="itens-dropdown-menu">
+                    <Link to='/' id="ext-links-drop" className="dropdown-item">
+                      <IoIosInformationCircle className="icones-drop" /> Página de suporte
+                    </Link>
+                  </li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li className="itens-dropdown-menu">
+                    {/* Este botão abre o modal, como já estava */}
+                    <button id="botao-sair" type="button" className="dropdown-item" onClick={handleShow}>
+                      <MdOutlineLogout id="sair" className="icones-drop" /> Sair da conta
+                    </button>
+                  </li>
+                </ul>
+
+                <Modal show={showModal} onHide={handleClose} centered>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Confirmação</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>Tem certeza que deseja sair?</Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                      Cancelar
+                    </Button>
+                    <Button variant="primary" onClick={handleLogout}>
+                      Sair
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              </div>
+            ) : (
+              <Link to="/login" className="links-nav" id="bot-login">Login</Link>
+            )}
           </div>
-        ) : (
-          <Link to="/login" className="links-nav" id="bot-login">Login</Link>
-        )}
       </div>
+
+      
     </header>
   );
 };

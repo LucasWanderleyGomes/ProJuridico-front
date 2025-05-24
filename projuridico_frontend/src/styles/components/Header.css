@@ -185,4 +185,9 @@
   color: rgb(250, 82, 82);
 }
 
-/* Removed .header.at-top and .header.scrolled classes */
+.right-header-cont{
+display: flex
+;
+    align-items: center;
+    gap: 70px;
+}

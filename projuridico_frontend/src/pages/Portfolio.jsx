@@ -14,8 +14,10 @@ import { GrPrevious } from "react-icons/gr";
 //STYLES
 
 //COMPONENTS
-import imageContent from "../assets/dani.png"
-
+import imageContent1 from "../assets/imagePortfolio.jpg"
+import imageContent2 from "../assets/imagePortfolio2.jpg"
+import imageContent3 from "../assets/imagePortfolio3.jpg"
+// BG DA PAG
 import bgPorftolio from "../assets/bg-portfolio.png"
 
 
@@ -104,7 +106,7 @@ const handleEsconderProcesso = (id) => {
               <div className='content-motion'>
                 
                 <div className="right-container-info">
-                    <img src={imageContent} alt="" id='img-dani' />
+                    <img src={imageContent1} alt="⚙️" id='img-dani' />
                 </div>
                 <div className="left-container-info">
                   
@@ -132,7 +134,7 @@ const handleEsconderProcesso = (id) => {
                 <div className='content-motion'>
                   
                   <div className="right-container-info">
-                    <img src={imageContent} alt="" id='img-dani' />
+                    <img src={imageContent2} alt="⚙️" id='img-dani' />
                   </div>
                   <div className="left-container-info">
                    
@@ -167,7 +169,7 @@ const handleEsconderProcesso = (id) => {
                       <div className='content-motion'>
                        
                         <div className="right-container-info">
-                          <img src={imageContent} alt="" id='img-dani' />
+                          <img src={imageContent3} alt="⚙️" id='img-dani' />
                         </div>
                         <div className="left-container-info">
                           
