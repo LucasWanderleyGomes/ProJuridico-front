@@ -31,12 +31,10 @@ const Perfil = () => {
   return (
     < >
         <Header/>
-        <section id='padding-nav'>        
-        </section>
         <section className='section-content'>
             <div className='container-capa'  style={{
                     backgroundImage: `url(${papelPerfil})`,
-                    backgroundSize: 'cover', // Opcional: para cobrir todo o container
+                    backgroundSize: 'cover', 
             }}>   
             </div>
             <div className='div-infos-user'>
@@ -51,7 +49,7 @@ const Perfil = () => {
             <section className='main-content-section-perfil'>
                 <div className='left-section'>
                     <p>XX X XXXX-XXXX</p>
-                    <a href="#">Só exibindo u link padrão</a>
+                    <a href="#">Só exibindo um link padrão</a>
                 </div>
                 <div className='right-section'>
                     

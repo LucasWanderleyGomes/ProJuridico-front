@@ -43,7 +43,7 @@ const FormCadastro = ({route, method}) =>{
     }
     return(
         <form onSubmit={handleSubmit} className="form-container">
-            <h1>{titulo}</h1>
+            <h1 id="titulo-cadastro">{titulo}</h1>
             <input 
                 type="text" 
                 className="input" 
