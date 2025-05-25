@@ -405,3 +405,9 @@ p{
     margin-top: 40px;
 }
 }
+
+@media  (max-width: 400px) {
+        #h1-titulo {
+        font-size: 25px;
+    }
+}
