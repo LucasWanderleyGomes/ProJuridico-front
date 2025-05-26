@@ -1,5 +1,9 @@
 import React from 'react'
+
+// STYLES
 import "../styles/components/Processo.css"
+
+// ASSETS
 import { MdFamilyRestroom } from "react-icons/md";
 import { IoMdBusiness } from "react-icons/io";
 import { GoLaw } from "react-icons/go";
@@ -9,8 +13,12 @@ import { BsThreeDots } from "react-icons/bs";
 import { FaTrash } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
-const Processo = ({ processo, onDelete }) => {
+import { AiOutlineFork } from "react-icons/ai";
+
+
+const Processo = ({ processo, onDelete, onEsconder}) => {
   
   const handlegetIcon = (categoria) => {
     switch (categoria) {
@@ -30,31 +38,45 @@ const Processo = ({ processo, onDelete }) => {
     }
   };
 
+
   return (
     <div className='processo-cont'>
       <div className='cima-processo'>
       
-        <button id='button-modal' type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <BsThreeDots id='three-dots'/>
+        <button
+          id='button-modal'
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target={`#modal-${processo.id}`}
+        >
+          <BsThreeDotsVertical className='tres-botoes-card'/>
         </button>
 
-        
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id={`modal-${processo.id}`} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Escolha a ação para o processo {processo.id}</h1>
+                
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <button className='botoes-inside-mod' id='botao-deletar' onClick={() => onDelete(processo.id)}><FaTrash id='trash'/> <p>Apagar processo</p></button>
+                < AiOutlineFork className='icone-padrao-modal'/>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tem certeza que deseja esconder o processo "{processo.id} - {processo.titulo}" ?<br />Essa ação será revertida ao recarregar o conteúdo.</h1>
+                <div className='div-botoes-modal-portf'>
+                  {/* <button className='botoes-inside-mod' id='botao-deletar' onClick={() => onDelete(processo.id)}><FaTrash id='trash'/> <p>Apagar processo</p></button> */}
                 
-                <button className='botoes-inside-mod' id='botao-esconder'><FaEyeSlash id='closed-eye'/><p>Esconder processo</p></button>
+                  <button
+                    className='botoes-inside-mod'
+                    id='botao-esconder'
+                    onClick={() => onEsconder(processo.id)}
+                  >
+                    <FaEyeSlash id='closed-eye' />
+                    <p>Esconder processo</p>
+                  </button>
+                </div>
                 
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            
+                
               </div>
             </div>
           </div>

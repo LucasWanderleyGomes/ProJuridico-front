@@ -31,8 +31,8 @@ const FormEsqueciSenha = ({route}) => {
 
   return (
         <form onSubmit={handleSubmit} className="form-container">
-            <h1>Redefinição de senha</h1>
-            <p>Informe seu email cadastrado na plataforma, para que passamos ajudá-lo(a) na recuperação da sua senha!</p>
+            <h1 id="titulo-email-red">Redefinição de senha</h1>
+            <p id="txt-email-red">Informe seu email cadastrado na plataforma, para que passamos ajudá-lo(a) na recuperação da sua senha!</p>
             <input 
                 id="input-email-forgot"
                 type="text" 

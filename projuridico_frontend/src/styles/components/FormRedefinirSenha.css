@@ -103,3 +103,86 @@
     flex-direction: column;
     gap: 18px;
 }
+
+@media  (max-width: 1220px) {
+    #txt-redefinir-senha {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.content-section {
+    padding: 45px;
+}
+}
+
+@media  (max-width: 1200px) {
+   .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .container-infos {
+        width: 75% !important;
+        align-items: center;
+    }
+    #container-form {
+    display: flex
+;
+    flex-direction: column;
+    background-color: white;
+    /* box-sizing: border-box; */
+    padding: 38px;
+    border-radius: 8px;
+    min-width: 487px;
+    width: 75%;
+    max-width: 80%;
+}
+
+    #img-bolinhas {
+        display: none;
+}
+
+#container-ps {
+    color: white;
+    display: flex
+;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 20px;
+}
+#txt-1 {
+    font-size: 22px !important;
+    }
+        #txt-2 {
+        font-size: 18px !important;
+        width: 65%;
+        margin-top: 0 !important; 
+    }
+}
+
+@media (max-width: 680px) {
+    .content-section {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        padding: 25px;
+        /* flex-direction: column; */
+    }
+}
+
+@media (max-width: 520px) {
+    #txt-2{
+        margin-bottom: 10px;
+    }
+    #container-ps{
+        margin-bottom: 0;
+    }
+}

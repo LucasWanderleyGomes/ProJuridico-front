@@ -11,14 +11,16 @@
 }
 
 .botoes-inside-mod{
-    display: flex;
+        display: flex
+;
     align-items: center;
     gap: 7px;
     border-radius: 8px;
-    padding: 8px;
-    width: 50%;
+    padding: 20px;
+    /* width: 65%; */
     justify-content: center;
     border: none;
+    max-height: 60px;
 }
 #botao-deletar{
     background-color: rgb(250, 104, 104);
@@ -30,22 +32,31 @@
     color: white;
 }
 #botao-esconder{
-    background-color: #fdbc58;
+    border: thin solid #fdbc58;
+    background-color: white;
+    color: #fdbc58;
+    transition: 0.3s ease-in-out;
 }
+
+
 #botao-esconder>p{
-    color: white;
+    color: #fdbc58;
 }
+
 #closed-eye{
-    color: white;
+    color: #fdbc58;
 }
+
 .botoes-inside-mod>p{
     margin-bottom: 0;
 }
 
 .modal-body{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+   display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
 }
 #button-modal{
     background-color: rgba(0, 0, 0, 0);
@@ -62,4 +73,9 @@
     display: flex;
     gap: 22px;
     min-height: 170px;
+}
+
+.icone-padrao-modal{
+    font-size: 60px;
+    color: #123a54;
 }

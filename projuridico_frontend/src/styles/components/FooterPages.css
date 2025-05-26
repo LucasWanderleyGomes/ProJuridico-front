@@ -89,3 +89,37 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@media (max-width: 970px){
+    .lista-itens-footer {
+    display: grid
+;
+    padding-left: 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    width: 90%;
+    margin-bottom: 0;
+    padding: 40px;
+    row-gap: 30px;
+}
+
+.secao-item-lista{
+    align-items: center;
+    max-width: none;
+}
+.links-item-lista {
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+.links-redes-sociais{
+    width: 70%;
+}
+}
+
+@media (max-width:620px){
+    .links-item-lista{
+        max-width: 67%;
+    }
+}

@@ -15,6 +15,10 @@ import { FaCompass } from "react-icons/fa6";
 import { RiQuestionnaireFill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 
+// BOTAO DE SUBIR PRO TOPO LA
+
+import BotScrollUp from '../components/BotScrollUp';
+
 const Consultoria = () => {
 
   const [consultoria, setConsultoria] = useState([])
@@ -133,6 +137,7 @@ const Consultoria = () => {
       
      
       <FooterPages/>
+      <BotScrollUp/>
     </div>
   )
 }

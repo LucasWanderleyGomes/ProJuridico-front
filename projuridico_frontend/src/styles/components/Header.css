@@ -1,58 +1,57 @@
-
-.left-header-cont{
+.left-header-cont {
   display: flex;
   gap: 80px;
 }
-  
-.logo {
-  display: flex
-  ;
-      align-items: center;
-      gap: 14px;
-      color: #fdbc58;
-      font-family: "Titillium Web", sans-serif;
-      font-weight: 900;
-      font-style: black;
-      font-size: 33px;
-      text-decoration: none;
-      transition: 0.2s ease-in-out;
-  }
 
-.logo:hover{
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fdbc58;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: black;
+  font-size: 33px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
   color: #bd7a17;
 }
-  
-  .nav {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #123A54;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav a:hover {
-    color: #7f8c8d;
-  }
 
-.items{
+.nav {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #123A54;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #7f8c8d;
+}
+
+.items {
   display: flex;
   align-items: center;
   gap: 80px;
 }
 
-.items>a{
+.items > a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 15px;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
 }
 
-#bot-sair{
+#bot-sair {
   text-decoration: none;
   color: #123A54;
   font-size: 15px;
@@ -63,7 +62,7 @@
   font-family: "Titillium Web", sans-serif;
 }
 
-#bot-login{
+#bot-login {
   text-decoration: none;
   color: #123A54;
   font-size: 15px;
@@ -74,20 +73,21 @@
   font-family: "Titillium Web", sans-serif;
   transition: 0.4s ease-in-out;
 }
-#bot-sair:hover{
+
+#bot-sair:hover {
   background-color: #123A54;
   border: thin solid white;
   color: white;
 }
-#bot-login:hover{
-  background-color: #123A54;
+
+#bot-login:hover {
   background-color: #123A54;
   border: thin solid white;
   color: white;
 }
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 100;
@@ -95,80 +95,89 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #123A54; /* Cor padrão ao rolar */
+  /* This will now be the permanent background */
+  
+  /* If you want the image as permanent background, use this instead: */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/bg-navbar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(5px); */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; /* Keep for other transitions if any */
 }
 
-.links-nav{
+.links-nav {
   transition: 0.2s ease-in-out;
 }
 
-.links-nav:hover{
+.links-nav:hover {
   font-size: 17px;
   color: #fdbc58;
 }
 
-#button-prof{
- background-color: white;
- border: none;
- border-radius: 100px;
- display: flex;
- align-items: center;
- justify-content: center;
+#button-prof {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   transition: 0.3s ease-in-out;
   transform: scale();
 }
-#button-prof:hover{
+
+#button-prof:hover {
   background-color: #123A54;
   border: thin solid white;
 }
 
-#button-prof:hover>.profile{
+#button-prof:hover > .profile {
   color: white;
 }
 
-#button-prof:hover>.dropdown-toggle::after{
+#button-prof:hover > .dropdown-toggle::after {
   color: #123A54;
 }
-.dropdown-toggle::after{
+
+.dropdown-toggle::after {
   display: none;
 }
 
-.profile{
+.profile {
   font-size: 16px;
-  color: #123A54; 
+  color: #123A54;
   position: absolute;
 }
 
-#menu-dropdown{
+#menu-dropdown {
   width: 243px;
   padding: 10px 0px;
 }
 
-.itens-dropdown-menu{
+.itens-dropdown-menu {
   display: flex;
   gap: 10px;
 }
 
-#ext-links-drop{
+#ext-links-drop {
   font-size: 14px;
   display: flex;
   align-items: center;
   gap: 8.5px;
 }
 
-.icones-drop{
+.icones-drop {
   font-size: 15px;
 }
 
-#sair{
+#sair {
   color: rgb(250, 82, 82);
 }
 
-#botao-sair{
+#botao-sair {
   display: flex;
   align-items: center;
   gap: 8.5px;
@@ -176,21 +185,133 @@
   color: rgb(250, 82, 82);
 }
 
-
-
-.header.at-top {
-  background-color: transparent;
-  box-shadow: none;
-  backdrop-filter: none;
+.right-header-cont{
+display: flex
+;
+    align-items: center;
+    gap: 70px;
 }
 
-.header.scrolled {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/bg-navbar.png");
-  background-color: rgba(18, 58, 84, 0.8); /* cor escura opcional por cima da imagem */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0px 0px 1px 4px #57575726;
-  backdrop-filter: blur(5px);
-  transition: all 0.4s ease-in-out;
+.lista-links-cell {
+  display: none;
+  flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(18, 58, 84, 0.95);
+    z-index: 999;
+    gap: 0px;
+}
+.item-link-header-cel{
+  list-style: none;
+}
+.botao-abrir-menu{
+  display: none;
+}
+.botao-fechar-menu {
+  display: none;
+}
+
+.botao-abrir-menu{
+  z-index: 1001; 
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  color: #fdbc58;
+}
+.botao-fechar-menu {
+  position: fixed;
+    top: 1.2rem;
+    left: 3.2rem;
+    z-index: 1001;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #fdbc58;
+}
+.links-pags-cel{
+  text-decoration: none;
+  color: white;
+  font-family: "Cabin", sans-serif;
+  font-size: 22px;
+}
+#link-home{
+  color: #fdbc58;
+  font-size: 40px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+}
+
+.fechar-menu-hamb{
+  font-size: 50px;
+}
+
+@media (max-width: 1200px){
+  .logo {
+
+    font-size: 25px;
+   
+}
+.items{
+  gap:60px;
+}
+   
+}
+
+@media (max-width: 1055px){
+  .logo {
+
+    font-size: 25px;
+   
+}
+
+.items {
+    display: flex
+;
+    align-items: center;
+    gap: 45px;
+}
+
+.items > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Cabin", sans-serif;
+    font-size: 14px;
+}
+#button-prof {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3sease-in-out;
+}
+@media (max-width: 840px){
+  .logo{
+    display: none;
+  }
+  .botao-abrir-menu{
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+  display: block;
+}
+.menu-hamb{
+  font-size: 40px;
+  color: #fdbc58;
+
+}
+
+.items{
+  display: none;
+}
+
+}
 }

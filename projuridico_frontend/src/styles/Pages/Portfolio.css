@@ -29,10 +29,11 @@
 }
 
 .content-motion{
-    width: 100%;
+        width: 100%;
     display: flex
 ;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 65px;
 }
 
 #previous-but, #next-but{
@@ -42,15 +43,21 @@
 
 .left-container-info{
     width: 50%;
-    padding: 50px 0px;
-    display: flex;
+    padding: 80px 0px;
+    display: flex
+;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
+
+
 .left-container-info>p{
-    color: white;
+  color: white;
     font-size: 16px;
-    text-align: right;
-    width: 100%;
+    text-align: justify;
+    /* width: 100%;*/
 }
 
 .right-container-info{
@@ -69,7 +76,8 @@
 }
 
 #img-dani{
-    width: 500px;
+    /* width: 500px; */
+    border-radius: 25px;
     height: 450px;
 }
 
@@ -109,14 +117,15 @@
 .baixo-processo{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .cima-processo{
-    width: 100%;
+        width: 100%;
     display: flex
 ;
     justify-content: end;
-    height: 15px;
+    height: 40px;
 }
 .left-box-processo{
     display: flex
@@ -190,4 +199,240 @@
     width: 60%;
     font-size: 26px;
     margin-bottom: 25px;
+}
+
+.titulo-cars-port{
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #fdbc58;
+    border-bottom: 2px solid #fdbc58;
+    font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.id-slider-port{
+
+    align-self: start;
+    border: thin solid white;
+    color: white;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+
+}
+
+.div-numero-slide{
+    margin-top: 100px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.icones-carr{
+    font-size: 25px;
+}
+
+#previous-but:hover, #next-but:hover {
+    opacity: 0.83;
+}
+
+#button-modal {
+    background-color: rgba(0, 0, 0, 0);
+    border: none; 
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tres-botoes-card{
+    font-size: 35px;
+}
+
+.modal.show .modal-dialog {
+    width: 650px;
+    transform: none;
+    top: 10vh;
+    max-width: 650px;
+}
+
+.modal-body, .modal-footer{
+    padding: 40px;
+}
+
+.modal-header{
+    padding: 20px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.div-botoes-modal-portf{
+    display: flex;
+    gap: 20px;
+}
+
+#exampleModalLabel{
+    text-align: center;
+}
+
+.fs-5 {
+    font-size: 1.55rem !important;
+}
+
+.img-escondida{
+    display: none;
+}
+@media (max-width: 825px){
+    .content-motion {
+    gap: 25px;
+}
+    #img-dani {
+    height: 350px;
+}
+
+}
+
+@media (max-width: 750px){
+    #major-bg {
+    width: 100%;
+    background-size: cover;
+    display: flex
+;
+    padding: 80px 45px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    #left-content-texts {
+        width: 90%;
+        display: flex
+;
+        flex-direction: column;
+        align-items: center;
+    }
+    #descricao-sec{
+        text-align: center;
+    }
+    #right-content-texts {
+    width: 90%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+#right-content-texts>p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width: auto;
+    
+}
+}
+
+@media (max-width: 610px){
+    .right-container-info{
+        display: none !important;
+    }
+    #img-dani{
+        display: none !important;
+    }
+    .img-escondida{
+        display: block;
+    }
+    .left-container-info {
+    width: 80%;
+
+}
+
+#title-section-processos {
+    margin-top: 35px;
+    color: #123a54;
+    font-family: "Cardo", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 37px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#texto-sec-proc {
+    text-align: center;
+    width: 75%;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.left-box-processo {
+    display: flex
+;
+    align-items: center;
+    background-color: #fdbc58;
+    padding: 30px;
+    border-radius: 319px;
+    height: 95px;
+    width: 95px;
+}
+.baixo-processo {
+        width: 100%;
+        display: flex
+;
+        flex-direction: column;
+        gap: 30px;
+        min-height: 170px;
+    }
+.processo-cont {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 20px;
+    border-top-left-radius: 98px;
+    border-bottom-right-radius: 98px;
+    background-color: #123a54;
+}
+#titulo{
+    font-size: 30px;
+    word-break: break-word;
+    text-align: center;
+}
+#categoria{
+    text-align: center;
+}
+#descricao{
+    text-align: center;
+    word-break: break-word;
+}
+   
+}
+
+@media (max-width: 455px){
+    #nome-cliente {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+    #major-bg {
+        width: 100%;
+        background-size: cover;
+        display: flex
+;
+        padding: 80px 45px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
 }

@@ -15,14 +15,14 @@ const FooterPages = () => {
             <ul className='lista-itens-footer'>
                 <li className='secao-item-lista'>
                     <h3 className='titles-footer'>Sobre nós</h3>
-                    <Link to='/' className='links-item-lista'>Acessar página</Link> 
+                    
                     <Link to='/' className='links-item-lista'>Nosso sistema foi desenvolvido com dedicação por uma equipe comprometida com a excelência. Cada detalhe foi pensado para oferecer uma experiência prática, segura e eficiente.</Link> 
                 </li>
                 <li className='secao-item-lista'>
                     <h3 className='titles-footer'>Links rápidos</h3>
-                    <Link to='/' className='links-item-lista'>Postagens do blog</Link>
-                    <Link to='/' className='links-item-lista'>Enviar mensagem para o suporte</Link>
-                    <Link to='/' className='links-item-lista'>Cadastrar</Link>
+                    <Link to='/comunidade/blog' className='links-item-lista'>Postagens do blog</Link>
+                    <Link to='/contato' className='links-item-lista'>Enviar mensagem para o suporte</Link>
+                    <Link to='/cadastro' className='links-item-lista'>Cadastrar</Link>
                 </li>
                 <li className='secao-item-lista'>
                     <h3 className='titles-footer'>Contatos</h3>

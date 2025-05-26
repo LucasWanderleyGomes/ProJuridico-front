@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    background-color: black;
   }
   
   .home-container {
@@ -20,3 +21,90 @@ body {
     background-color: #333;
     margin: 20px auto;
   }
+
+.header{
+  background-color: #123A54;
+}
+
+@media (max-width: 1080px){
+  .content-section-home{
+    padding-right: 30px;
+  }
+
+  #titulo-secao2{
+    font-size: 40px;
+  }
+
+  .content-cards{
+    font-size: 16px;
+  }
+  .section-tabs{
+    align-items: center;
+  }
+  .container-tabs-texts {
+    height: auto;
+    width: 95%;
+  }
+}
+
+@media (max-width: 920px){
+  .containers-hero {
+  justify-content: center;
+}
+
+    .box1, .box2, .box3 {
+        max-width: none;
+        height: auto;
+        padding: 1.5rem 1rem;
+    }
+#texto-apresentacao{
+  text-align: center;
+}
+.cabecalho-secao2 {
+ 
+    align-items: center;
+ 
+}
+.titulo-secao2, .desc-secao2{
+  text-align: center;
+}
+.main-box-sec{
+  flex-direction: column;
+}
+
+.linha-direita{
+  display: none;
+}
+.textos-direita{
+  align-items: center;
+  max-width: 95%;
+}
+#titulo-secao2{
+  text-align: center;
+}
+}
+
+@media (max-width: 520px){
+  .block-tabs{
+    gap: 10px;
+  }
+  .section-tabs {
+
+    padding: 25px !important;
+}
+.main-box-sec{
+    padding: 25px;
+}
+}
+@media (max-width: 400px){
+ .textos-direita>h1{
+font-size: 45px
+}
+.agendar{
+font-size: 15px;
+}
+
+#texto-apresentacao{
+font-size: 18px;
+}
+}

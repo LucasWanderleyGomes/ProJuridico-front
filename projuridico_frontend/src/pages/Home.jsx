@@ -1,13 +1,25 @@
 import React from 'react'
-import Hero from "../components/Hero";
-import Community from "../components/Community";
+
 import Contact from "../components/Contact";
-import FooterPages from '../components/FooterPages'
+
 import Footer from "../components/Footer";
-import "../styles/Pages/Home.css";
+
+// BOTAO DE SUBIR PRO TOPO LA
+
+import BotScrollUp from '../components/BotScrollUp';
+
+// COMPONENTES DE PAGINA
+
 import Header from "../components/Header";
 import Box from "../components/Box";
+import TabsSection from '../components/TabsSection'
+import Hero from "../components/Hero";
+import Community from "../components/Community";
+import FooterPages from '../components/FooterPages'
 
+
+// STYLES
+import "../styles/Pages/Home.css";
 
 const Home = () => {
   return (
@@ -15,6 +27,7 @@ const Home = () => {
       <Header/>
       <Hero />
       <Box />
+      <TabsSection/>
      
       <main>
         <Community />
@@ -22,7 +35,7 @@ const Home = () => {
       </main>
       
       <FooterPages/>
-
+      <BotScrollUp/>
     </div>
   );
 };

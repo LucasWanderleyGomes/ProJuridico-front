@@ -17,7 +17,7 @@ const InfoLoginCadastro = ({title, text}) => {
               <div id='title-page'>
 
                 <img src={logo} alt=""  id='icone-pj'/>
-                <Link to="/" id='h1-titulo'>ProJurídico</Link>
+                <Link to="/" id='h1-titulo'>Danielle Lucena</Link>
                 
               </div>
 
@@ -35,7 +35,7 @@ const InfoLoginCadastro = ({title, text}) => {
             <div id='title-page'>
               {/* <ImHammer2 id='icone-pj'/> */}
               <img src={logo} alt=""  id='icone-pj'/>
-              <Link to="/" id='h1-titulo'>ProJurídico</Link>
+              <Link to="/" id='h1-titulo'>Danielle Lucena</Link>
               
             </div>
 
