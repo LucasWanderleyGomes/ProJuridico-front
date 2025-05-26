@@ -116,6 +116,7 @@ const handleEsconderProcesso = (id) => {
                   
                   <h4 className='titulo-cars-port'>Base de atuação</h4>
                   <p>Nosso ponto de partida e principal base de atuação é a defesa das mulheres no âmbito das estruturas familiares, que são os espaços onde as diferenças – essências distintas - podem, primeiramente, se transformar em desigualdades – privilégios de uns em detrimento de outros - e se transmutar em violências.</p>
+                 
                   <div className='div-numero-slide'>
                       <p className='id-slider-port'>1</p>
                   </div>
