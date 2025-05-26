@@ -34,6 +34,10 @@ const Portfolio = () => {
   const [titulo, setTitulo] = useState("")
   const [descricao, setDescricao] = useState("")
   const [escondidos, setEscondidos] = useState([]);
+
+  // estados aqui para a paginação, pegando a proxima e a anterior
+  const [nextPage, setNextPage] = useState(null);
+  const [previousPage, setPreviousPage] = useState(null);
   
 
   useEffect(() => {
@@ -41,12 +45,15 @@ const Portfolio = () => {
 
   }, [] )
 
-  const getProcesso = () =>{
-      api.get("/api/v2/processos/")
-      .then((res) => res.data)
-      .then((data) => {setPortfolio(data.results) ; console.log(data.results)})
-      .catch((err) => alert(err));
-  }
+  const getProcesso = (url = "/api/v2/processos/") => {
+  api.get(url)
+    .then((res) => {
+      setPortfolio(res.data.results);
+      setNextPage(res.data.next);
+      setPreviousPage(res.data.previous);
+    })
+    .catch((err) => alert(err));
+};
   
   const handleDeleteProcesso = (id) => {
   api.delete(`/api/v2/processos/${id}/`)
@@ -234,8 +241,21 @@ const handleEsconderProcesso = (id) => {
                 
               />
           ))}
+          <div className="pagination-buttons" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '2rem' }}>
+            {previousPage && (
+              <button onClick={() => getProcesso(previousPage)} className="btn btn-outline-dark">
+                <GrPrevious /> Anterior
+              </button>
+            )}
+            {nextPage && (
+              <button onClick={() => getProcesso(nextPage)} className="btn btn-outline-dark">
+                Próxima <GrNext />
+              </button>
+            )}
+          </div>
         </section>
       </motion.div>
+      
       
       
       {/* <h3>Adicionar um processo</h3>

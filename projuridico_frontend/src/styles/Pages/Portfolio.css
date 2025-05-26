@@ -293,6 +293,20 @@
 .img-escondida{
     display: none;
 }
+
+.pagination-buttons button {
+     padding: 13px 20px;
+    /* font-weight: bold; */
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    border: 2px solid #fdbc58;
+    color: #fdbc58;
+}
+
+
 @media (max-width: 825px){
     .content-motion {
     gap: 25px;
