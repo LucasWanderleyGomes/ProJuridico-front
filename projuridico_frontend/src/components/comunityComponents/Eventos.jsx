@@ -168,8 +168,11 @@ const Posts = () => {
                             <div id='profile-container'>
                                 <IoPersonCircle className='profile-icon'/>
                             </div>
-                            <p>{post.usuario?.username} </p>
-                            <p id='email-user'>{post.usuario?.email}</p>
+                            <div className='email-user-event'>
+                                <p id='user-nickname'>{post.usuario?.username} </p>
+                                <p id='email-user'>{post.usuario?.email}</p>
+                            </div>
+                           
                         </div>
                         <div className='box-data'>
                             <p id='data-post'>Publicado em: {new Date(post.data_publicacao).toLocaleString()}</p>

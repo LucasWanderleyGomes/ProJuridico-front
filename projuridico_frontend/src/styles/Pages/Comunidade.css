@@ -36,3 +36,118 @@ ul{
 
     border-radius: 8px;
 }
+.email-user-event{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 840px){
+    .main-content-section {
+    display: flex
+;
+    flex-direction: row;
+    background-color: rgb(251, 246, 246);
+    gap: 14px;
+    justify-content: center;
+}
+.container-eventos {
+    width: 80%;
+}
+}
+@media (max-width: 650px){
+    #infos-txt-decorador>p {
+    font-size: 14px;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+#titulo-decorador-com {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    color: #123A54;
+    text-align: center;
+}
+    .container-eventos {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px){
+    .box-data {
+    display: flex;
+    flex-direction: column-reverse !important;
+    gap: 10px;
+    align-items: end !important;
+}
+.box-infos {
+        display: flex
+;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+    }
+.email-user-event {
+    display: flex
+;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+#profile-container {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgb(71 71 71 / 6%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-right: 7px;
+}
+#user-nickname{
+    font-size: 16px;
+}
+}
+
+@media (max-width: 500px){
+    #profile-container {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgb(71 71 71 / 6%);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 7px;
+}
+.postagem-card {
+    width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    gap: 25px;
+}
+.postagem-card>p {
+    margin-bottom: 0px;
+    word-break: break-word;
+}
+    #data-post {
+        margin-bottom: 0;
+        font-size: 10px;
+        color: rgb(105, 105, 105);
+        word-break: break-word;
+        text-align: end;
+    }
+
+        .container-eventos {
+        width: 95%;
+    }
+}
