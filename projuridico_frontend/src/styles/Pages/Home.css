@@ -96,3 +96,15 @@ body {
     padding: 25px;
 }
 }
+@media (max-width: 400px){
+ .textos-direita>h1{
+font-size: 45px
+}
+.agendar{
+font-size: 15px;
+}
+
+#texto-apresentacao{
+font-size: 18px;
+}
+}
