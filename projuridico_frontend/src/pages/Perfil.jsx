@@ -12,7 +12,7 @@ import '../styles/Pages/Perfil.css'
 
 const Perfil = () => {
 
-    const [profile, setProfile] = useState("")
+    const [profile, setProfile] = useState({})
 
     useEffect( () => {
         handleGetProfile()
@@ -44,6 +44,7 @@ const Perfil = () => {
                 <div className='infos-textuais'>
                     <h2 className='username'>{profile.username}</h2>
                     <p className='email'>{profile.email}</p>
+                    <p>{profile.descricao_pessoal}</p>
                 </div>
             </div>
             <section className='main-content-section-perfil'>
