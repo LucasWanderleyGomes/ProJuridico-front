@@ -7,6 +7,10 @@ import FooterPages from '../components/FooterPages'
 
 import BotScrollUp from '../components/BotScrollUp';
 
+//STYLES 
+
+import "../styles/Pages/Contato.css"
+
 const Contato = () => {
   return (
     <div>
